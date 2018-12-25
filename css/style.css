@@ -1,0 +1,538 @@
+/*--------------------------------------------
+  REDEHUB WEBSITE GENERAL STYLE SHEET
+  USE THIS COMMENT FORMAT TO COMMENT 
+  VARIOUS SECION OF YOUR STYLING
+----------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/*--------------------------------------------
+ GENERAL
+----------------------------------------------*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    font-size: 1.2rem;
+    color: #5d5d5d;
+    background: #fff;
+    transition: all .5s;
+}
+
+#wrapper {
+    padding: 0;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 32px;
+    font-weight: 700;
+    
+}
+h3{
+    font-size: 28px;
+    font-weight: normal;
+}
+h4{
+    font-size: 24px;
+    font-weight: normal;
+}
+h5{
+    font-size: 18px;
+    font-weight: normal;
+}
+
+p{
+    font-size: 1rem;
+}
+
+/*--------------------------------------------
+    HEADER
+----------------------------------------------*/
+
+#header{
+    margin: 0;
+    background-image: url(../images/header-image.jpg);
+    background-size: cover;
+    height: 100%;
+}
+.trans-box{
+    background: rgba(54, 123, 168, 0.9);
+    height: 100%; 
+}
+
+/*--------------------------------------------
+    NAVBAR
+----------------------------------------------*/
+nav.main-nav{
+    background: transparent;
+}
+
+.main-nav ul li .nav-link{
+    color: #e7e6e6;
+    font-size: 1rem;
+}
+.main-nav ul li .nav-link:hover{
+    color: #fff;
+}
+/*--------------------------------------------
+    INTRO
+----------------------------------------------*/
+
+.intro {
+   margin-top: 2rem;
+}
+
+.intro-text{
+    text-align: center;
+}
+ .intro-text h1{
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 20px;
+    color: #fff
+
+}
+
+.intro .search-area{
+    width: 90%;
+    /* background-color: #fff; */
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    padding: 0;
+}
+
+.intro .search-box{
+    width: 85%;
+    padding: .5rem  1rem;
+    border-radius: 50px 0 0 50px;
+    background-color: #fff;
+
+    
+}
+.search-box input{
+    border: 0;
+    outline: none;
+    width: 100%;
+    color: #888;
+    font-size: 1rem;
+}
+
+.search-box input:focus{
+    outline: none;
+}
+
+.intro .search-icon{
+    background-color: rgb(54, 123, 168);
+  
+    width: 15%;
+    padding: .5rem;
+    border-radius: 0 50px 50px 0;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+/*--------------------------------------------
+    FOOTER
+----------------------------------------------*/
+.main-footer{
+    padding: 4rem 1rem;
+    font-size: 1rem;
+    
+}
+.main-footer a, .main-footer a:hover{
+    text-decoration: none;
+}
+.main-footer a:hover{
+    display: inline-block;
+    border-bottom: 1px solid #52A7E8;
+    color: #52A7E8;
+}
+/*--------------------------------------------
+    PAGE CONTENT
+----------------------------------------------*/
+
+.page-content{
+    width: 100%;
+    padding: 2rem 1rem;
+    position: relative;
+}
+
+.page-content-intro{
+   padding: .5rem;
+}
+
+.page-content-body{
+   padding: 0;
+}
+
+/* main page options section */
+
+.page-dos{
+    
+    margin: 0 auto;
+    background: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding:    2rem 1rem;
+    color: #282626;
+
+}
+
+.page-dos-head{
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+.dos-icon{
+    color: #367BA8;
+    margin-bottom: 1rem;
+    
+}
+ .dos-icon img{
+    height: 100px;
+}
+.page-dos-body{
+    text-align: justify;
+    font-size: 1rem;
+    padding: 2rem;
+}
+
+
+/* doc-ratings */
+
+.doc-ratings{
+   
+}
+
+.doc-ratings .d-r{
+    padding: .8rem 1.2rem;
+    display: flex;
+}
+
+.img-side img{
+    max-height: 120px;
+}
+
+.info-side{
+    width: 100%;
+    margin-left: 1rem;
+}
+
+.info-side .doc{
+    width: 100%;
+}
+.info-side .ratings{
+    display: block;
+    margin-top: 1rem;
+}
+
+.doc span.h2{
+    font-size: 24px;
+}
+.doc span.occupation{
+    font-size: 24px;
+}
+
+
+/* About section style */
+.abt{
+    font-size: 1.2rem;    
+    width: 100%;
+    margin: 1rem auto;
+
+}
+.about-quote{
+    padding: 5rem 0;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.quote-author{
+    position: absolute;
+    bottom: 30px;
+    right: 18%;
+}
+.about-quote::before, .about-quote::after{
+    content: ' " ';
+    position: absolute;
+    font-size: 6rem;
+    color: #fff;
+}
+.about-quote::before{
+    top: 9px;
+    left: 20px;
+}
+.about-quote::after{
+    bottom: -31px;
+    right: 5px;
+}
+
+.quote-author .author{
+    position: relative;
+}
+.quote-author .author .line{
+    position: absolute;
+    height: 1px;
+    width: 80px;
+    top: 16px;
+    right: 105%;
+    background: #fff;
+}
+
+
+/* Guaranty section style */
+
+.guaranty-msg{
+    text-align: justify;
+    height: 100%;
+    font-size: 1.2rem;
+}
+
+.g-img{
+    text-align: center;
+}
+
+.g-img svg{
+    width: calc(349px - 100px);
+    height: calc(312px - 100px);
+}
+
+/*--------------------------------------------
+    HELPER CLASSES
+----------------------------------------------*/
+
+.text-primary{
+    color: #282626;
+
+}
+
+.text-theme-blue{
+    color: #52A7E8;
+}
+.text-darker{
+    color: #2E6C95;
+}
+.text-alert{
+    color: #C72121;
+}
+
+.bg-theme-blue{
+    background-color: #52A7E8;
+    color: #fff;
+}
+.bg-darker{
+    background-color: #2E6C95;
+    color: #fff;
+}
+.bg-alert{
+    background-color: #C72121;
+    color: #fff;
+}
+.bg-theme-gradient{
+    background: linear-gradient(to bottom, #397EAB, #0d5582 );
+    color: #fff;
+
+}
+/*--------------------------------------------
+    MEDIA QUERIES
+----------------------------------------------*/
+
+
+@media (min-width: 576px) {
+
+   
+
+    .intro .search-area{
+          margin-top: 4rem;
+        
+    }
+    .intro .search-box{
+        width: 90%;
+        padding:.8rem  2rem;
+        
+    }
+    .intro .search-icon{
+       
+        width: 10%;
+        padding: .8rem;
+        
+    }
+   
+    .intro-text h1{
+        font-size: 30px;
+    }
+
+   
+    .page-content-intro{
+        padding: 2rem;
+    }
+    .page-content-intro h1{
+        font-size: 2rem;
+    }
+    .page-content{
+        padding: 3rem;
+    }
+    .page-dos{
+        padding: 4rem;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+    }
+
+    .doc-ratings .d-r{
+        padding:2rem 3rem;
+    }
+
+    .doc h2{
+        font-size: 32px;
+    }
+    .guaranty-msg{
+        font-size: 1.5rem;
+    }
+    .g-img svg{
+        width: 349px;
+        height: 312px;
+    }
+    .about-quote::before{
+        top: 26px;
+        left: -25px;
+    }
+    .about-quote::after{
+        bottom: -25px;
+        right: -14px;
+    }
+ 
+ }
+
+
+@media (min-width: 768px) {
+    #header{
+        height: 80vh;
+    }
+    .intro {
+        margin-top: 4rem;
+    }
+
+    .intro-text h1{
+        font-style: normal;
+        font-weight: bold;
+        line-height: normal;
+        font-size: 36px;
+
+    }
+    .intro .search-area{
+        width: 70%;
+    }
+    .pc-home{
+        height: 70vh;
+    }
+    .opt{
+        position: absolute;
+        top: -25%;
+        left:0;
+        padding: 2rem 5rem;
+    }
+     .dos-icon img{
+        height: 100%;
+    }
+    .page-dos-head{
+        font-size: 2rem;
+    }
+    .page-dos-body{
+        text-align: justify;
+        font-size: 1.5rem;
+        padding: 2rem;
+    }
+    .guaranty-msg{
+        text-align: left;
+        font-size: 28px;
+    }
+
+    .g-img{
+        text-align: right;
+    }
+
+    .g-img svg{
+        width: 349px;
+        height: 312px;
+    }
+    .about-quote::before{
+        top: 23px;
+        left: -35px; 
+    }
+    .about-quote::after{
+        bottom: -1px;
+        right: -28px;
+    }
+    .abt{
+        font-size: 24px;    
+    }
+ }
+
+
+@media (min-width: 992px) { 
+    .info-side{
+        width: 100%;
+        display: flex;
+        align-self: center;
+        margin-left: 1rem;
+    }
+
+    .info-side .doc{
+        width: 85%;
+    }
+    .info-side .ratings{
+        display: block;
+        margin-top: 1rem;
+        width: 15%;
+    }
+    .about-quote::before{
+        top: 15px;
+        left: -10px; 
+    }
+    .about-quote::after{
+        bottom: -5px;
+        right: -6px;
+    }
+    
+ }
+
+
+@media (min-width: 1200px) { 
+     .main-nav ul li .nav-link {
+        margin-right: 2rem;
+    }
+
+    .abt{
+        font-size: 24px;    
+        width: 80%;
+        margin: 1rem auto;
+
+    }
+    .about-quote::before{
+        top: 20px;
+        left: 20px; 
+    }
+    .about-quote::after{
+        bottom: -20px;
+        right: 20px; 
+    }
+    
+    
+ }
