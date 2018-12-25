@@ -464,9 +464,7 @@ nav.main-nav{
         font-size: 28px;
     }
 
-    .g-img{
-        text-align: right;
-    }
+    
 
     .g-img svg{
         width: 349px;
@@ -510,7 +508,9 @@ nav.main-nav{
         bottom: -5px;
         right: -6px;
     }
-    
+    .g-img{
+        text-align: right;
+    }
  }
 
 
