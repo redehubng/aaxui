@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Axya</title>
+    <link rel="icon" href="images/favicon.png" type="image/png" >
+    <!-- BOOTSTRAP STYLE -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- HEADER  -->
+        <div id="header">
+            <div class="trans-box">
+                <nav class="navbar navbar-expand-lg main-nav">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"><img src="images/axya-logo.png"  class="img-fluid" alt="axya logo"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Home
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">FAQs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link sign-in" href="#" data-toggle="modal" data-target="#sign-in-up-modal">Sign in</a>
+                                </li>
+                               
+                              
+                            </ul>
+                           
+                        </div>
+
+                    </div>
+                </nav>
+
+
+                <div class="intro"> 
+                    <div class="container">
+                        <div class="intro-content">
+                            <div class="intro-text">
+                               <h1>Premium Healthcare Platform</h1> 
+                            </div>
+                            <form action="" method="post">
+                                <div class="search-area">
+                                    <div class="search-box">
+                                        <input type="search" name="search" id="search" placeholder="search doctors, illness, topics etc">
+                                    </div>
+                                   
+                                    <button type="submit" class="search-icon"> <i class="fa fa-search fa-lg"></i></button>
+                                            
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PAGE CONTENT -->
+
+        <!-- start section -->
+        <section id="dos" class="page-content pc-home ">
+
+            <!-- page option section -->
+            <div class="page-content-body opt">
+                <div class="page-dos">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="page-dos-head">
+                                <div class="dos-icon">
+                                    <img src="images/chat-icon.png" class="img-fluid" alt="">
+                                    <!-- <i class="far fa-comments fa-2x"></i> -->
+                                </div>
+                                <div class="dos-title">
+                                    <span>Chat with Doctor</span>
+                                </div>
+                            </div>
+                            <div class="page-dos-body">
+                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="page-dos-head">
+                                <div class="dos-icon">
+                                    <img src="images/calender-icon.png" class="img-fluid" alt="">
+                                    <!-- <i class="fa fa-calendar-alt fa-2x"></i> -->
+                                </div>
+                                <div class="dos-title">
+                                    <span>Booking Appointments</span>
+                                </div>
+                            </div>
+                            <div class="page-dos-body">
+                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!-- end section -->
+
+      
+        <!-- SIGN IN / SIGN UP POP UP -->
+        <div class="modal fade" id="sign-in-up-modal" tabindex="-1" role="dialog" aria-labelledby="signInSignUpPopup" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <ul class="nav nav-tabs sign-in-up-tab" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="sign-in-tab" data-toggle="tab" href="#sign-in" role="tab" aria-controls="sign-in" aria-selected="true">Sign in</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="register-tab" data-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="false">Register</a>
+                            </li>
+                           
+                        </ul>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="sign-in" role="tabpanel" aria-labelledby="sign-in-tab">
+                                <div class="sign-in-form d-flex justify-content-center">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="username">Username / Email</label>
+                                            <input type="email" class="form-control"   placeholder="johndoe@example.com">
+                                           
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="password">Password</label>
+                                            <input type="password" class="form-control"  placeholder="Password">
+                                        </div>
+                                       <div class="text-center">
+                                           <button type="submit" class="btn btn-theme-blue rounded-pill px-4">Submit</button>
+
+                                       </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+                                <div class="sign-in-form d-flex justify-content-center">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="fname">First Name</label>
+                                                    <input type="text" class="form-control"  placeholder="John">
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="lname">Last Name</label>
+                                                    <input type="text" class="form-control"  placeholder="Doe">
+                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="username">Username / Email</label>
+                                            <input type="email" class="form-control"  placeholder="johndoe@example.com">
+                                
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="password">Password</label>
+                                            <input type="password" class="form-control"  placeholder="Password">
+                                        </div>
+                                        <div class="acct-type">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div id="doc-acct" class=" acct">
+                                                         I WANT TO ATTEND TO PATIENTS
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div id="pat-acct" class="acct">
+                                                         I WANT TO MEET WITH A DOCTOR
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-center">
+                                            <button type="submit" class="btn btn-theme-blue rounded-pill px-4">Submit</button>
+                                
+                                        </div>
+                                    </form>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+
+        <footer class="main-footer bg-dark">
+            <div class="container">
+                <div class="footer-copyright  text-theme-blue">
+
+                    <span>AXYA  © 2018 Made with ❤ by <a href="https://redehub.com.ng" class="text-theme-blue">redehub.com.ng</a></span>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- SCRIPTS -->
+
+    <!-- jquery script -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="js/main.js"></script>
+
+    <!-- inline script -->
+
+    <script>
+        
+        $(document).ready(function(){
+
+           let $docAcct = $('#doc-acct');
+           let $patAcct = $('#pat-acct');
+           let selectColor = "btn-theme-blue";
+
+           function hasSelectedColor(theClass) {
+               return theClass.hasClass(selectColor);
+           }
+
+           function toggleColorChange(theClass){
+                if (hasSelectedColor(theClass)) {
+                    theClass.removeClass(selectColor);
+
+               } else {
+                  
+                   $('.acct-type').find('.btn-theme-blue').removeClass(selectColor);
+                       
+                
+
+                   theClass.addClass(selectColor);
+
+               }
+           }
+
+           $docAcct.click(function(){
+               toggleColorChange($(this));               
+           })
+           $patAcct.click(function(){
+               toggleColorChange($(this));               
+           })
+
+        });
+        
+    </script>
+</body>
+
+</html>

@@ -13,7 +13,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     font-size: 1.2rem;
-    color: #5d5d5d;
+    color: #282626;
     background: #fff;
     transition: all .5s;
 }
@@ -72,11 +72,77 @@ nav.main-nav{
 }
 
 .main-nav ul li .nav-link{
-    color: #e7e6e6;
+    color: rgba(255, 255, 255, 0.788);
     font-size: 1rem;
 }
 .main-nav ul li .nav-link:hover{
     color: #fff;
+}
+.main-nav ul li .nav-link.sign-in{
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: #fff;
+    transition: all .3s;
+}
+.main-nav ul li .nav-link.sign-in:hover{
+    background: #fff;
+    color: #209fd9;
+}
+
+
+
+/* SIGN IN / REGISTER STYLE */
+.sign-in-up-tab{
+    border: none;
+}
+.sign-in-up-tab li .nav-link{
+    color: #282626;
+    border: none;
+    font-weight: normal;
+}
+.sign-in-up-tab li .nav-link.active{
+    border-bottom: 2px solid #209fd9;
+}
+
+
+.sign-in-form form{
+    width: 100%;
+}
+.sign-in-form form label{
+    font-size: 1rem;
+    padding-left: .8rem;
+}
+.sign-in-form input{
+    color: #282626;
+    border: 1px solid #292477;
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.sign-in-form input:focus{
+    box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.199);
+}
+.acct-type{
+    padding: 2rem 0;
+}
+.acct-type .acct{
+    display: block;
+    padding: .5rem 1rem;
+    margin-bottom: 1rem;
+    font-size: .8rem;
+    border: none;
+    background: #929AAF;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    transition: all .3s;
+}   
+
+.acct-type .acct:hover{
+     background: #788096;
 }
 /*--------------------------------------------
     INTRO
@@ -334,7 +400,7 @@ nav.main-nav{
 }
 
 .bg-theme-blue{
-    background-color: #209fd9;
+    background-color: #209fd9 !important;
     color: #fff;
 }
 .bg-darker{
@@ -349,6 +415,15 @@ nav.main-nav{
     background: linear-gradient(to bottom, #209fd9, #147ba7 );
     color: #fff;
 
+}
+
+.btn-theme-blue{
+    background-color: #209fd9 !important;
+    color: #fff;
+}
+.btn-theme-blue:hover{
+    background-color: #147ba7 !important;
+    color: #fff;
 }
 /*--------------------------------------------
     MEDIA QUERIES
@@ -481,6 +556,9 @@ nav.main-nav{
     .abt{
         font-size: 24px;    
     }
+    .sign-in-form form label{
+        font-size: 18px;
+    }
  }
 
 
@@ -510,6 +588,14 @@ nav.main-nav{
     }
     .g-img{
         text-align: right;
+    }
+
+    .sign-in-form form{
+        width: 80%;
+    }
+
+    .sign-in-form form label{
+        font-size: 20px;
     }
  }
 
