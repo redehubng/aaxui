@@ -49,6 +49,53 @@ p{
     font-size: 1rem;
 }
 
+
+/*--------------------------------------------
+    HELPER CLASSES
+----------------------------------------------*/
+
+.text-primary{
+    color: #282626;
+
+}
+
+.text-theme-blue{
+    color: #209fd9;
+}
+.text-darker{
+    color: #147ba7;
+}
+.text-alert{
+    color: #C72121;
+}
+
+.bg-theme-blue{
+    background-color: #209fd9 !important;
+    color: #fff;
+}
+.bg-darker{
+    background-color: #147ba7;
+    color: #fff;
+}
+.bg-alert{
+    background-color: #C72121;
+    color: #fff;
+}
+.bg-theme-gradient{
+    background: linear-gradient(to bottom, #209fd9, #147ba7 );
+    color: #fff;
+
+}
+
+.btn-theme-blue{
+    background-color: #209fd9 !important;
+    color: #fff;
+}
+.btn-theme-blue:hover{
+    background-color: #147ba7 !important;
+    color: #fff;
+}
+
 /*--------------------------------------------
     HEADER
 ----------------------------------------------*/
@@ -144,6 +191,7 @@ nav.main-nav{
 .acct-type .acct:hover{
      background: #788096;
 }
+
 /*--------------------------------------------
     INTRO
 ----------------------------------------------*/
@@ -164,7 +212,7 @@ nav.main-nav{
 
 }
 
-.intro .search-area{
+.intro .search-area, .search-area{
     width: 90%;
     /* background-color: #fff; */
     border-radius: 50px;
@@ -176,7 +224,7 @@ nav.main-nav{
     padding: 0;
 }
 
-.intro .search-box{
+.intro .search-box, .search-box{
     width: 85%;
     padding: .5rem  1rem;
     border-radius: 50px 0 0 50px;
@@ -196,7 +244,7 @@ nav.main-nav{
     outline: none;
 }
 
-.intro .search-icon{
+.intro .search-icon, .search-icon{
     background-color: #147ba7;
   
     width: 15%;
@@ -226,6 +274,7 @@ nav.main-nav{
     border-bottom: 1px solid #209fd9;
     color: #209fd9;
 }
+
 /*--------------------------------------------
     PAGE CONTENT
 ----------------------------------------------*/
@@ -380,51 +429,63 @@ nav.main-nav{
     height: calc(312px - 100px);
 }
 
+
 /*--------------------------------------------
-    HELPER CLASSES
+    DOCTORS FORM
 ----------------------------------------------*/
 
-.text-primary{
+#doc-form{
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.df-container{
+    position: relative;
+    background-color: #fff;
     color: #282626;
-
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 .5rem 2rem rgba(0, 0, 0, 0.199);
 }
 
-.text-theme-blue{
-    color: #209fd9;
+.form-section{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.199);
+    padding: 1rem;
 }
-.text-darker{
-    color: #147ba7;
-}
-.text-alert{
-    color: #C72121;
-}
-
-.bg-theme-blue{
-    background-color: #209fd9 !important;
-    color: #fff;
-}
-.bg-darker{
-    background-color: #147ba7;
-    color: #fff;
-}
-.bg-alert{
-    background-color: #C72121;
-    color: #fff;
-}
-.bg-theme-gradient{
-    background: linear-gradient(to bottom, #209fd9, #147ba7 );
-    color: #fff;
-
+.form-section input, .form-section select{
+    border: 1px solid #302C2C;
+    box-sizing: border-box;
+    border-radius: 4px;
 }
 
-.btn-theme-blue{
-    background-color: #209fd9 !important;
-    color: #fff;
+.form-section input:focus, .form-section select:focus{
+    box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.199);
 }
-.btn-theme-blue:hover{
-    background-color: #147ba7 !important;
-    color: #fff;
+
+.fs-body{
+    position: relative;
 }
+.fs-title {
+    position: relative;
+    padding: .5rem 0;
+    font-weight: 700;
+}
+.fs-title span{
+    font-weight: 700;
+}
+
+.fs-icon{
+    position: absolute;
+    top: 0;
+    left: -5%;
+}
+.fs-icon svg{
+    width: 40px;
+    height: 40px;
+}
+
+
 /*--------------------------------------------
     MEDIA QUERIES
 ----------------------------------------------*/
@@ -559,6 +620,9 @@ nav.main-nav{
     .sign-in-form form label{
         font-size: 18px;
     }
+    .df-container{
+        padding: 2rem 3.5rem;
+    }
  }
 
 
@@ -596,6 +660,9 @@ nav.main-nav{
 
     .sign-in-form form label{
         font-size: 20px;
+    }
+     .df-container{
+        padding: 2rem 4rem;
     }
  }
 
