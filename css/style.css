@@ -478,7 +478,7 @@ nav.main-nav{
 .fs-icon{
     position: absolute;
     top: 0;
-    left: -5%;
+    left: -20%;
 }
 .fs-icon svg{
     width: 40px;
@@ -553,7 +553,9 @@ nav.main-nav{
         bottom: -25px;
         right: -14px;
     }
- 
+    .fs-icon{
+        left: -10%;
+    }
  }
 
 
@@ -686,6 +688,10 @@ nav.main-nav{
         bottom: -20px;
         right: 20px; 
     }
-    
+    .fs-icon{
+        position: absolute;
+        top: 0;
+        left: -5%;
+    }
     
  }
