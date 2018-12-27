@@ -55,20 +55,34 @@
             </div>
         </nav>
 
-  
-        <!-- PAGE CONTENT -->
-
-     <!-- SIGN IN / REGISTER -->
+ 
+        <!-- SIGN IN / REGISTER -->
         <div class="form-auth">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-6">
                         <div class="card shadow">
                             <div class="card-header bg-white">
-                                <h4 class="card-title ">Sign in</h4>
+                                <h4 class="card-title ">Register</h4>
                             </div>
                             <div class="card-body">
                                 <form>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="fname">First Name</label>
+                                                <input type="text" class="form-control form-default" placeholder="John">
+                                
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="lname">Last Name</label>
+                                                <input type="text" class="form-control form-default" placeholder="Doe">
+                                
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="form-group">
                                         <label for="username">Username / Email</label>
                                         <input type="email" class="form-control form-default" placeholder="johndoe@example.com">
@@ -77,6 +91,20 @@
                                     <div class="form-group">
                                         <label for="password">Password</label>
                                         <input type="password" class="form-control form-default" placeholder="Password">
+                                    </div>
+                                    <div class="acct-type">
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <div id="doc-acct" class=" acct">
+                                                    I WANT TO ATTEND TO PATIENTS
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-5 offset-sm-2">
+                                                <div id="pat-acct" class="acct">
+                                                    I WANT TO MEET WITH A DOCTOR
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="text-center">
                                         <button type="submit" class="btn btn-theme-blue rounded-pill px-4">Submit</button>
@@ -117,7 +145,43 @@
 
     <!-- inline script -->
 
-  
+    <script>
+        
+        $(document).ready(function(){
+
+           let $docAcct = $('#doc-acct');
+           let $patAcct = $('#pat-acct');
+           let selectColor = "btn-theme-blue";
+
+           function hasSelectedColor(theClass) {
+               return theClass.hasClass(selectColor);
+           }
+
+           function toggleColorChange(theClass){
+                if (hasSelectedColor(theClass)) {
+                    theClass.removeClass(selectColor);
+
+               } else {
+                  
+                   $('.acct-type').find('.btn-theme-blue').removeClass(selectColor);
+                       
+                
+
+                   theClass.addClass(selectColor);
+
+               }
+           }
+
+           $docAcct.click(function(){
+               toggleColorChange($(this));               
+           })
+           $patAcct.click(function(){
+               toggleColorChange($(this));               
+           })
+
+        });
+        
+    </script>
 </body>
 
 </html>
