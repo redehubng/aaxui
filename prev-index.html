@@ -21,6 +21,7 @@
 
 <body>
     <div id="wrapper">
+        
         <!-- HEADER  -->
         <div id="header">
             <div class="trans-box">
@@ -63,16 +64,54 @@
                             <div class="intro-text">
                                <h1>Premium Healthcare Platform</h1> 
                             </div>
-                            <form action="" method="post">
-                                <div class="search-area">
-                                    <div class="search-box">
-                                        <input type="search" name="search" id="search" placeholder="search doctors, illness, topics etc">
-                                    </div>
-                                   
-                                    <button type="submit" class="search-icon"> <i class="fa fa-search fa-lg"></i></button>
-                                            
+                            <div class="search-container">
+                                <div class="search-close">
+                                    <span class="s-close">&times;</span>
                                 </div>
-                            </form>
+                                <form  method="post">
+                                    <div class="search-area">
+                                        <div class="search-box">
+                                            <input type="search" name="search" id="search" placeholder="search doctors, illness, topics etc">
+                                        </div>
+                                       
+                                        <button type="submit" class="search-icon "><i class="fa fa-search fa-lg"></i></button>
+                                    </div>
+                                       
+                                </form>
+                                <div id="search-result" class=" bg-white shadow " >
+                                    <div class="result">
+                                        <div class="result-header text-center p-3">
+                                            <span class="h4 result-title  text-darker"></span>
+                                        </div>
+                                        <div class="result-nav px-3 ">
+                                            <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" id="doctor-tab" data-toggle="tab" href="#doctor" role="tab" aria-controls="doctor" aria-selected="true">Doctor</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="tag-tab" data-toggle="tab" href="#tag" role="tab" aria-controls="tag" aria-selected="false">Keyword/Tag</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="speciality-tab" data-toggle="tab" href="#speciality" role="tab" aria-controls="speciality" aria-selected="false">Specialities</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="result-body">
+                                            <div class="tab-content" id="myTabContent">
+                                                <div class="tab-pane fade show active" id="doctor" role="tabpanel" aria-labelledby="doctor-tab">
+                                                    Doctor
+                                                </div>
+                                                <div class="tab-pane fade" id="tag" role="tabpanel" aria-labelledby="tag-tab">
+                                                    Keyword/Tag
+                                                </div>
+                                                <div class="tab-pane fade" id="speciality" role="tabpanel" aria-labelledby="speciality-tab">
+                                                    Specialities
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -294,6 +333,83 @@
 
     <!-- bootstrap js -->
     <script src="js/main.js"></script>
+
+    <script>
+        
+        $(document).ready(function(){
+
+            /**
+            * SCRIPT TO SHOW THE SEARCH RESULT AREA
+            */
+
+            let $searchBox = $('#search');
+            // create the overlay and append to body
+            let $searchOverlay = $("<div id='search-overlay'></div>");
+            $('body').append($searchOverlay);
+            
+             function removeSearchResult() {
+                $('.search-container').removeClass('search-active'),
+                    $('#search-result').fadeOut(500),
+                    $('.search-close').fadeOut(500),
+                    $searchOverlay.fadeOut(500),
+                    $('.search-icon').removeClass('bg-white text-theme-blue'),
+                    $searchBox.val("");
+            }
+
+            function showSearchResult() {
+                $searchOverlay.fadeIn(500);
+
+                // push search-container up wards
+                $('.search-container').addClass('search-active');
+
+                // display the search list and close btn
+
+                $('#search-result').fadeIn(500);
+                $('.search-close').fadeIn(500);
+
+                // change search icon style
+                $('.search-icon').addClass('bg-white text-theme-blue');
+            }
+            // show on keypress to search
+
+            $searchBox.on('keypress', showSearchResult);
+            $('button.search-icon').click(function(event){
+                event.preventDefault();
+                showSearchResult();
+            });
+            $searchBox.click(function() {
+                if($searchBox.val() == ""){
+                    console.log('emptu');
+                }else{
+                    console.log('not emotyu');
+                    
+                }
+                
+            });
+
+            $('.s-close').click(removeSearchResult);
+
+             $searchBox.on('keyup', function () {
+                if($(this).val() == ""){
+                   removeSearchResult();
+                }
+             });
+           
+
+            /**
+            * SCRIPT TO DISPLAY RESULTS
+            */
+            
+            //search query
+
+             $searchBox.on('keyup', function(){
+                let searchQuery = $searchBox.val();
+                 $('.result-title').text('Search Result for ' + searchQuery);
+             })
+
+        });
+        
+    </script>
 </body>
 
 </html>
