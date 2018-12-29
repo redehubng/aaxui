@@ -624,7 +624,7 @@
             });
 
             $('.s-close').click(removeSearchResult);
-
+            $searchOverlay.click(removeSearchResult);
             $searchBox.on('keyup', function () {
                 if ($(this).val() == "") {
                     removeSearchResult();
