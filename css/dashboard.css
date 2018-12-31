@@ -31,11 +31,16 @@ a, a:hover, a:focus {
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
+.navbar-expand-lg .navbar-nav {
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
 .navbar-btn {
     box-shadow: none;
     outline: none !important;
     border: none;
 }
+
 
 .line {
     width: 100%;
@@ -96,14 +101,31 @@ h3, h4, h5 {
     text-align: center;
 }
 
-#sidebar.active .sidebar-header h3,
+#sidebar.active .sidebar-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    padding: 0;
+    height: 68px;
+}
+
+#sidebar.active .sidebar-header .avatar,
+#sidebar.active .CTAs {
+    display: none;
+}
+
+#sidebar.active .sidebar-header .avatar-mini {
+    display: block;
+}
+/* #sidebar.active .sidebar-header h3,
 #sidebar.active .CTAs {
     display: none;
 }
 
 #sidebar.active .sidebar-header strong {
     display: block;
-}
+} */
 
 #sidebar ul li a {
     text-align: left;
@@ -140,13 +162,17 @@ h3, h4, h5 {
 }
 
 #sidebar .sidebar-header {
-    padding: 20px;
+    display: flex;
+    padding: .5rem 1rem;
     background: rgba(0,0,0, .13896);
 }
 
-#sidebar .sidebar-header strong {
+/* #sidebar .sidebar-header strong {
     display: none;
     font-size: 1.8em;
+} */
+#sidebar .sidebar-header .avatar-mini {
+    display: none;
 }
 
 #sidebar ul.components {
@@ -224,9 +250,12 @@ a.download {
     width: 100%;
     transition: all 0.3s;
     margin-left: 233px;
-    margin-top: 87px;
+    margin-top: 86px;
 }
 
+#content.active{
+    margin-left: 80px;
+}
 #content-navbar {
     background: #f8f9fa;
     border-bottom: 1px solid rgba(0,0,0, .03896);
@@ -257,6 +286,40 @@ a.download {
     margin-bottom: 0 !important;
 }
 
+.dashboard-navbar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.xs-nav{
+    display: flex;
+}
+
+#extra-buttom-nav.active{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;    
+    width: 100%;
+    background: #147ba7;
+    color: #004085;
+    margin-top: 86px;
+    position: fixed; 
+    z-index: 10;
+}
+
+#extra-buttom-nav.active .nav-item{
+    display: inline-block;
+    padding: 1rem;
+}
+#extra-buttom-nav.active .nav-link{
+  /* color: #209fd9 !important; */
+}
+.buttom-nav-toggler{
+    display:  none;
+    /* display:  inline-block; */
+}
+
 .dm-nav{
     position: fixed;
     width: 100%;
@@ -272,6 +335,22 @@ a.download {
 .trans-box{
     background: rgba(32, 161, 217, 0.904);
 
+}
+
+.notification-count{
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+   top: 12px;
+    left: 24px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #CF2929;
+    font-size: 8px;
+    font-weight: 700;
+    border: 4px solid #209fd9;
+    text-align: center;
 }
 
 .nav-opt{
@@ -307,7 +386,20 @@ a.sign-out{
 /* ---------------------------------------------------
     HELPERS STYLE
 ----------------------------------------------------- */
+.online-status{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #97E965;
+}
 
+.online-status.online{
+    background-color: #97E965;
+}
+.online-status.offline{
+    background-color: #a1a1a1;
+}
 .mt-40 {
     margin-top: 40px;
 }
@@ -828,11 +920,18 @@ nav[aria-label="breadcrumb"].dot-separator .breadcrumb-item+.breadcrumb-item::be
         margin-left: 0 !important;
     }
 
-    #sidebar .sidebar-header h3, #sidebar .CTAs {
+    /* #sidebar .sidebar-header h3, #sidebar .CTAs {
         display: none;
     }
 
     #sidebar .sidebar-header strong {
+        display: block;
+    } */
+    #sidebar .sidebar-header .avatar, #sidebar .CTAs {
+        display: none;
+    }
+
+    #sidebar .sidebar-header .avatar-mini {
         display: block;
     }
 
@@ -861,5 +960,31 @@ nav[aria-label="breadcrumb"].dot-separator .breadcrumb-item+.breadcrumb-item::be
     }
     #sidebarCollapse span {
         display: none;
+    }
+    #content {
+        width: 100%;
+        transition: all 0.3s;
+        margin-left: 0;
+      
+    }
+
+    #content.active{
+        margin-left: 80px;
+    }
+    #content.active-buttom{
+        margin-top: 155px;
+    }
+    #sidebar.active-buttom{
+        margin-top: 155px;
+    }
+}
+
+@media (max-width: 992px){
+    /* .xs-nav, #extra-buttom-nav{
+        display: none;
+    } */
+    .buttom-nav-toggler{
+        /* display:  none; */
+        display:  inline-block;
     }
 }

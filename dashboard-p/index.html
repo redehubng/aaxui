@@ -39,13 +39,25 @@
                     <a class="navbar-brand" href="#">
                         <img src="../images/axya-logo.png"  height="47" alt="axya logo">
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                        <span class="navbar-toggler-icon">
+                            <svg width="35" height="20" viewBox="0 0 40 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0H40V4H0V0Z" fill="white" />
+                                <path d="M0.5 10.5H35.5V14.5H0.5V10.5Z" fill="white" />
+                                <path d="M0 21H40V25H0V21Z" fill="white" />
+                            </svg>
+                            <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.9998 15.3333C25.1082 15.3333 26.8332 13.6083 26.8332 11.5C26.8332 9.39163 25.1082 7.66663 22.9998 7.66663C20.8915 7.66663 19.1665 9.39163 19.1665 11.5C19.1665 13.6083 20.8915 15.3333 22.9998 15.3333ZM22.9998 19.1666C20.8915 19.1666 19.1665 20.8916 19.1665 23C19.1665 25.1083 20.8915 26.8333 22.9998 26.8333C25.1082 26.8333 26.8332 25.1083 26.8332 23C26.8332 20.8916 25.1082 19.1666 22.9998 19.1666ZM22.9998 30.6666C20.8915 30.6666 19.1665 32.3916 19.1665 34.5C19.1665 36.6083 20.8915 38.3333 22.9998 38.3333C25.1082 38.3333 26.8332 36.6083 26.8332 34.5C26.8332 32.3916 25.1082 30.6666 22.9998 30.6666Z"
+                                    fill="white" />
+                            </svg>
+
+
+                        </span>
+                    </button> -->
             
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto d-flex align-items-center">
+                    <div class=" dashboard-navbar" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto xs-nav  align-items-center">
                             <li class="nav-item active">
                                 <a class="nav-link" href="#">Home
                                     <span class="sr-only">(current)</span>
@@ -60,27 +72,44 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Contact Us</a>
                             </li>
+                        </ul>
+
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2 m-0 border-0 rounded search-form" type="search" placeholder="Search..." aria-label="Search">
+                            
+                        </form>
+                        <a  class="buttom-nav-toggler" data-toggle="collapse" href="#extra-buttom-nav" role="button" aria-expanded="false" aria-controls="extra-buttom-nav">
+                            <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.9998 15.3333C25.1082 15.3333 26.8332 13.6083 26.8332 11.5C26.8332 9.39163 25.1082 7.66663 22.9998 7.66663C20.8915 7.66663 19.1665 9.39163 19.1665 11.5C19.1665 13.6083 20.8915 15.3333 22.9998 15.3333ZM22.9998 19.1666C20.8915 19.1666 19.1665 20.8916 19.1665 23C19.1665 25.1083 20.8915 26.8333 22.9998 26.8333C25.1082 26.8333 26.8332 25.1083 26.8332 23C26.8332 20.8916 25.1082 19.1666 22.9998 19.1666ZM22.9998 30.6666C20.8915 30.6666 19.1665 32.3916 19.1665 34.5C19.1665 36.6083 20.8915 38.3333 22.9998 38.3333C25.1082 38.3333 26.8332 36.6083 26.8332 34.5C26.8332 32.3916 25.1082 30.6666 22.9998 30.6666Z"
+                                    fill="white" />
+                            </svg>
+
+                        </a>
+                        <ul id="extra-buttom-nav" class=" navbar-nav align-items-center  ">
             
-                            <form class="form-inline">
-                                <input class="form-control mr-sm-2 m-0 border-0 rounded" type="search" placeholder="Search..." aria-label="Search">
-                                
-                            </form>
                             <li class="nav-item">
-                                <a class="nav-link mr-1 text-white" href="#"><i class="fas fa-cog fa-2x"></i></a>
+                                <a class="nav-link mr-1 text-white" href="#"><i class="fas fa-cog fa-2x"></i>S</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link mr-1 text-white" href="#"><i class="fas fa-bell fa-2x"></i></a>
+                            <li class="nav-item position-relative">
+                                <a class="nav-link mr-1 text-white" href="#"><i class="fas fa-bell fa-2x"></i>B</a>
+                                <span class="notification-count">1</span>
                             </li>
-                            <li class="nav-item ml-3">
+                            <li class="nav-item nav-avatar ml-3">
                                 <img src="../images/a1.jpg"  height="55" alt="user avatar" class="rounded-circle">
                             </li>
                             <li class="nav-item nav-opt">
                                 <a class="nav-link ml-2 text-white "  data-toggle="collapse" href="#optDropdown" role="button" aria-expanded="false" aria-controls="optDropdown">
-                                    <i class="fas fa-ellipsis-v fa-2x"></i>
+                                    <i class="fas fa-ellipsis-v fa-2x"></i>O
                                 </a>
                                 <div class="collapse opt-menu shadow-lg" id="optDropdown">
                                     <div class="opt-items">
+                                        <div class="extra-opt-items">
+                                            <a href="#" class="opt-item">Home</a>
+                                           
+                                        </div>
+                                        <a href="#" class="opt-item">Dashboard</a>
                                         <a href="#" class="opt-item">Profile</a>
+                                       
                                         <a href="#" class="opt-item">Account</a>
                                         <a href="#" class="opt-item">Payment Option</a>
                                         <a href="#" class="opt-item">Help</a>
@@ -96,14 +125,23 @@
             </nav>
         </div>
     </div>
+    <div id="buttom-nav"></div>
     <div class="wrapper">
 
         <nav id="sidebar">
 
             <!-- Sidebar Header -->
-            <div class="sidebar-header">
-                <h3>Sublime Admin</h3>
-                <strong>SA</strong>
+            <div class="sidebar-header ">
+                <div class="avatar">
+                    <img src="../images/a1.jpg" height="50" class="rounded-circle" alt=""> 
+                    <span class="online-status online mx-1"></span>John Doe
+                </div>
+                <div class="avatar-mini">
+                    <img src="../images/a1.jpg" height="50" class="rounded-circle" alt="">
+                    <span class="online-status online"></span>
+                </div>
+                <!-- <h3>Sublime Admin</h3>
+                <strong>SA</strong> -->
             </div>
 
             <ul class="nav flex-sm-column">
@@ -186,61 +224,19 @@
             
             <div id="content-navbar">
                 <div class="container-fluid">
-                    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                    <div class="bg-light py-3 d-flex">
                 
-                        <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                        <button type="button" id="sidebarCollapse" class="btn btn-theme-blue navbar-btn">
                             <i class="fa fa-align-left"></i>
                             <!-- Shrink Sidebar -->
                         </button>
                 
-                        <a class="navbar-brand" href="#">Dashboard</a>
+                        <a class="crumb h4 text-theme-blue">
+                            DASHBOARD
+                        </a>
+                        
                 
-                        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="collapsibleNavId"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                
-                        <div class="collapse navbar-collapse" id="navbarCollapse">
-                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        <i class="fa fa-dashboard"></i>
-                                    </a>
-                                </li>
-                
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i class="fa fa-globe"></i>
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                        <a class="dropdown-item" href="#">Action 1</a>
-                                        <a class="dropdown-item" href="#">Action 2</a>
-                                    </div>
-                                </li>
-                            </ul>
-                
-                            <ul class="navbar-nav mt-2 mt-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Account</a>
-                                </li>
-                
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                        <a class="dropdown-item" href="#">Action 1</a>
-                                        <a class="dropdown-item" href="#">Action 2</a>
-                                    </div>
-                                </li>
-                
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Log Out</a>
-                                </li>
-                            </ul>
-                
-                
-                        </div>
-                    
-                    </nav>
+                    </div>
                 </div>
                 <!-- end container fluid -->
             </div>
@@ -258,147 +254,7 @@
                 <div class="container-fluid">
                     <div class="wrapper-content">
 
-                        <div class="box">
-                            <div class="box-title">
-                                <h5>Transactions</h5>
-                                <!-- <small class="text-muted">simple login form example</small> -->
-                            </div>
-                            <div class="box-content">
-                                <!-- START ROW -->
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="row">
-                                            <div class="col-lg-9">
-                                                <div class="table-responsive">
-                                                    <table class="table">
-                                                        <thead>
-                                                            <tr>
-                                                                <th scope="col">Methods</th>
-                                                                <th scope="col">Picture</th>
-                                                                <th scope="col">Amount</th>
-                                                                <th scope="col">Status</th>
-                                                                <th scope="col">Details</th>
-                                                                <th scope="col">Date</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Transfer</td>
-                                                                <td>
-                                                                    <div class="media">
-                                                                        <img src="assets/img/skype.png" alt="Image" class="img-responsive img-circle">
-                                                                    </div>
-                                                                </td>
-                                                                <td>$200.00</td>
-                                                                <td>
-                                                                    <span class="badge badge-primary">pending</span>
-                                                                </td>
-                                                                <td>order 102000020100</td>
-                                                                <td>20 june, 2017 on 17:05</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Transfer</td>
-                                                                <td>
-                                                                    <div class="media">
-                                                                        <img src="assets/img/skype.png" alt="Image" class="img-responsive img-circle">
-                                                                    </div>
-                                                                </td>
-                                                                <td>$200.00</td>
-                                                                <td>
-                                                                    <span class="badge badge-warning">On hold</span>
-                                                                </td>
-                                                                <td>order 102000020100</td>
-                                                                <td>20 june, 2017 on 17:05</td>
-                                                            </tr>
-                                                           
-                                                            <tr>
-                                                                <td>Transfer</td>
-                                                                <td>
-                                                                    <div class="media">
-                                                                        <img src="assets/img/skype.png" alt="Image" class="img-responsive img-circle">
-                                                                    </div>
-                                                                </td>
-                                                                <td>$200.00</td>
-                                                                <td>
-                                                                    <span class="badge badge-warning">On hold</span>
-                                                                </td>
-                                                                <td>order 102000020100</td>
-                                                                <td>20 june, 2017 on 17:05</td>
-                                                            </tr>
-                                                           
-                                                            <tr>
-                                                                <td>Transfer</td>
-                                                                <td>
-                                                                    <div class="media">
-                                                                        <img src="assets/img/skype.png" alt="Image" class="img-responsive img-circle">
-                                                                    </div>
-                                                                </td>
-                                                                <td>$200.00</td>
-                                                                <td>
-                                                                    <span class="badge badge-warning">On hold</span>
-                                                                </td>
-                                                                <td>order 102000020100</td>
-                                                                <td>20 june, 2017 on 17:05</td>
-                                                            </tr>
-                                                           
-                                                            <tr>
-                                                                <td>Transfer</td>
-                                                                <td>
-                                                                    <div class="media">
-                                                                        <img src="assets/img/skype.png" alt="Image" class="img-responsive img-circle">
-                                                                    </div>
-                                                                </td>
-                                                                <td>$200.00</td>
-                                                                <td>
-                                                                    <span class="badge badge-warning">On hold</span>
-                                                                </td>
-                                                                <td>order 102000020100</td>
-                                                                <td>20 june, 2017 on 17:05</td>
-                                                            </tr>
-                                                           
-                                                            <tr>
-                                                                <td>Transfer</td>
-                                                                <td>
-                                                                    <div class="media">
-                                                                        <img src="assets/img/skype.png" alt="Image" class="img-responsive img-circle">
-                                                                    </div>
-                                                                </td>
-                                                                <td>$200.00</td>
-                                                                <td>
-                                                                    <span class="badge badge-warning">On hold</span>
-                                                                </td>
-                                                                <td>order 102000020100</td>
-                                                                <td>20 june, 2017 on 17:05</td>
-                                                            </tr>
-                                                           
-                                                            <tr>
-                                                                <td>Transfer</td>
-                                                                <td>
-                                                                    <div class="media">
-                                                                        <img src="assets/img/skype.png" alt="Image" class="img-responsive img-circle">
-                                                                    </div>
-                                                                </td>
-                                                                <td>$200.00</td>
-                                                                <td>
-                                                                    <span class="badge badge-warning">On hold</span>
-                                                                </td>
-                                                                <td>order 102000020100</td>
-                                                                <td>20 june, 2017 on 17:05</td>
-                                                            </tr>
-                                                           
-                                
-                                
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                           
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- END ROW -->
-                            </div>
-                        </div>
+                     
                         
                         
                     </div>
@@ -434,9 +290,35 @@
         $(document).ready(function () {
 
             $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
+                $('#sidebar').toggleClass('active'),
+                $('#content').toggleClass('active');
             });
 
+            let $excessNav = $('.xs-nav');
+            let $buttomNav = $('#extra-buttom-nav');
+            let $buttomBtnToggler = $('.buttom-nav-toggler');
+
+            
+            if(document.body.scrollWidth <= 992){
+                $excessNav.hide();
+                $buttomNav.addClass('collapse ');
+                $('.navbar-brand img').attr('src', '../images/axya-logo-mini.svg').css('margin', '0');
+                $('.main-nav').find('.search-form').css('padding','.25rem');
+                // alert("yes");      
+                
+            }else{
+                $excessNav.show(),
+                $buttomNav.show();
+                // alert("nont");      
+            }
+
+            $buttomBtnToggler.click(function () {
+                $('#buttom-nav').append($buttomNav),
+                $('#content').toggleClass('active-buttom'),
+                $('#sidebar').toggleClass('active-buttom'),
+                $buttomNav.find('.nav-avatar').hide();
+                $buttomNav.toggleClass('active');
+            });
         });
     </script>
 </body>

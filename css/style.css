@@ -118,6 +118,10 @@ nav.main-nav{
     background: transparent;
 }
 
+/* .navbar-collapse.collapse-full{
+    height: 100vh;
+    font-size: 1.5rem;
+} */
 .main-nav ul li .nav-link{
     color: rgba(255, 255, 255, 0.788);
     font-size: 1rem;
@@ -139,6 +143,9 @@ nav.main-nav{
 }
 
 
+.navbar-toggler:focus{
+    outline: none !important;
+}
 
 /* SIGN IN / REGISTER STYLE */
 .sign-in-up-tab{
