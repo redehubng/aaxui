@@ -10,6 +10,9 @@
     <!-- BOOTSTRAP STYLE -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     
+    <!-- FULLCALENDAR STYLE -->
+    <link rel="stylesheet" href="../css/fullcalendar.min.css">
+    
     
     
     <!-- MAIN STYLE -->
@@ -231,8 +234,8 @@
                             <!-- Shrink Sidebar -->
                         </button>
                 
-                        <a class="crumb h4 text-theme-blue">
-                            DASHBOARD
+                        <a class="crumb h4 text-theme-blue text-uppercase">
+                            my Appointments
                         </a>
                         
                 
@@ -242,19 +245,20 @@
             </div>
             <!-- end content navbar -->
 
-            <nav aria-label="breadcrumb" class="arrow-separator">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item active" aria-current="page">Home</li>
-                </ol>
-            </nav>
+         
             <!-- end breadcrumbs -->
             
 
             <section class="main-content mt-40">
                 <div class="container-fluid">
                     <div class="wrapper-content">
-
-                     
+                        <div class="row">
+                            <div class="col-lg-9">
+                                <div id="calendar"></div>
+                            </div>
+                            <div class="col-lg-3"></div>
+                        </div>
+                    
                         
                         
                     </div>
@@ -283,43 +287,44 @@
     
     <!-- bootstrap js -->
     <script src="../js/bootstrap.min.js"></script>
+
+    <!-- moment js -->
+    <script src="../js/moment.min.js"></script>
+
+    <!-- full Calender js -->
+    <script src="../js/fullcalendar.min.js"></script>
     
-    <!-- bootstrap js -->
+    <!-- Main js -->
     <script src="../js/main.js"></script>
+
     <script>
-        $(document).ready(function () {
+      $(document).ready(function () {
 
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active'),
-                $('#content').toggleClass('active');
-            });
+            // page is now ready, initialize the calendar...
 
-            let $excessNav = $('.xs-nav');
-            let $buttomNav = $('#extra-buttom-nav');
-            let $buttomBtnToggler = $('.buttom-nav-toggler');
-
-            
-            if(document.body.scrollWidth <= 992){
-                $excessNav.hide();
-                $buttomNav.addClass('collapse ');
-                $('.navbar-brand img').attr('src', '../images/axya-logo-mini.svg').css('margin', '0'),
-                $('.main-nav').find('.search-form').css('padding','.25rem'),
-                $('.notification-count').css('borderColor','#147ba7');
-                // alert("yes");      
+           $('#calendar').fullCalendar({
+             height: 500,
+           
+            dayClick: function (date, jsEvent, view) {
                 
-            }else{
-                $excessNav.show(),
-                $buttomNav.show();
-                // alert("nont");      
-            }
+                   alert('Clicked on: ' + date.format());
 
-            $buttomBtnToggler.click(function () {
-                $('#buttom-nav').append($buttomNav),
-                $('#content').toggleClass('active-buttom'),
-                $('#sidebar').toggleClass('active-buttom'),
-                $buttomNav.find('.nav-avatar').hide();
-                $buttomNav.toggleClass('active');
-            });
+               },
+            events: [
+                   {
+                       title: 'Appoitment',
+                       start: '2019-01-03T13:13:55.008',
+                       end: '2019-01-03T13:13:55.008'
+                   },
+                   {
+                       title: 'Event Title2',
+                       start: '2019-01-05T13:13:55-0400',
+                       end: '2019-01-05T13:13:55-0400'
+                   }
+               ]
+              
+          });
+            
         });
     </script>
 </body>
