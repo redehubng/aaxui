@@ -253,17 +253,19 @@
                 <div class="container-fluid">
                     <div class="wrapper-content">
                         <div class="row">
-                            <div class="col-lg-9">
+                            <div class="col-md-9">
                                 <div id="calendar"></div>
                             </div>
-                            <div class="col-lg-3"></div>
+                            <div class="col-md-3">
+                            </div>
                         </div>
-                    
+                        
                         
                         
                     </div>
                 </div>
             </section>
+                    
             <!-- end main content -->
 
             <div class="content-footer">
@@ -273,6 +275,53 @@
             <!-- end footer -->
         </section>
 
+
+        <!-- RIGHT SIDEBAR TO DISPLAY APPOINTMENT INFORMTION -->
+        <div id="appointment-display" class=" appointment-dc bg-theme-gradient">
+            <div class="display-wrapper">
+
+                <!-- Type of Appointment indicators -->
+
+                <div class="appointment-legend">
+                    <div class="legend l-upcoming">
+                        <span class="indicator"></span> Upcoming
+                    </div>
+                    <div class="legend l-past">
+                        <span class="indicator"></span> Past
+                    </div>
+                    <div class="legend l-requested">
+                        <span class="indicator"></span> Requested
+                    </div>
+                   
+                </div>
+                <div class="display-card card shadow-lg">
+                    <div class="card-body">
+                        <button type="button" class="close " aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <div class="media">
+                            <img src="../images/a5.jpg" height="50" class="align-self-center mr-3 rounded-circle" alt="Doctor image">
+                            <div class="media-body">
+                                <h5 class="m-0 py-3 text-darker font-weight-bold ">Dr. Bogdana Madalin</h5>
+                                
+                            </div>
+                        </div>
+                        <div class="details text-darker">
+
+                            <div class="day-detail">
+                                Sunday, January 3
+                            </div>
+                            <div class="time-detail">
+                                3:00pm GMT
+                            </div>
+                            <div class="event-detail">
+                                Consultation for Allergies  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- end content -->
 
     </div>
@@ -313,6 +362,11 @@
             events: [
                    {
                        title: 'Appoitment',
+                       start: '2019-01-02T13:13:55.008',
+                       end: '2019-01-02T13:13:55.008'
+                   },
+                   {
+                       title: 'Appoitment',
                        start: '2019-01-03T13:13:55.008',
                        end: '2019-01-03T13:13:55.008'
                    },
@@ -324,6 +378,24 @@
                ]
               
           });
+
+
+        //   CALENDAR SCHEDULE CARD SCRIPT
+          let $todayCell = $('.fc-day-top.fc-today');
+          let $todayCellIndex = $('.fc-day-top.fc-today')[0].cellIndex;
+
+          function getCellTable(cell) {
+              let $cellTable;
+              $cellTable = cell.closest('table');
+              return $cellTable;
+          }
+
+          let $currentTable = getCellTable();
+          console.log($currentTable.find('td')[$todayCellIndex]);
+
+
+          
+         
             
         });
     </script>

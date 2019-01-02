@@ -33,4 +33,5 @@
                 $buttomNav.find('.nav-avatar').hide();
                 $buttomNav.toggleClass('active');
             });
+            
 });

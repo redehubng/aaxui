@@ -262,8 +262,71 @@ a.download {
     border-bottom: 1px solid rgba(0,0,0, .03896);
 }
 
+.appointment-dc{
+    position: fixed;
+    top:0;
+    right: 0;
+    height: calc(100vh - 86px);
+    margin-top: 86px;
+    width: 270px;
+    max-width: 270px;
+}
+.appointment-dc > .display-wrapper{
+    padding: 3rem 1rem;
+}
+
+.appointment-legend .legend{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+}
+
+.appointment-legend .legend .indicator{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: .5rem;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: #6FCF97;
+}
 
 
+.legend.l-upcoming .indicator{
+    background-color: #6FCF97;
+}
+.legend.l-past .indicator{
+   background-color: #C72121;
+}
+.legend.l-requested .indicator{
+    background-color: #08b3fc;
+}
+
+.appointment-dc .display-card{
+    margin-top: 3rem;
+    background: #f7edcc;
+    border-radius: 10px;
+    padding-bottom: 2rem;
+}
+
+.appointment-dc .display-card .details{
+    margin-top: 1rem;
+}
+.details .day-detail,
+.details .time-detail,
+.details .event-detail{
+    text-align: center;
+}
+
+.details .day-detail{
+    font-size: 1.2rem;
+}
+.details .time-detail{
+    font-weight: 700;   
+    margin-bottom: .5rem;
+}
 /*----------------------------------------------------
     FOOTER STYLE
 -----------------------------------------------------*/
