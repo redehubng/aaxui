@@ -252,7 +252,7 @@
 
                                     </span>
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="filter-list">
+                                <div class="dropdown-menu " aria-labelledby="filter-list">
                                     <a href="#" class="dropdown-item active">most relevant</a>
                                     <a href="#" class="dropdown-item">experience</a>
                                     <a href="#" class="dropdown-item">and wah ever</a>
@@ -317,6 +317,42 @@
                                             <i class="fas fa-star"></i>
                                         </span>
                                     </a>
+                                    <a class="search-item">
+                                        <img src="../images/a3.jpg" height="60" class="rounded-circle doc-img" alt="doctor's image">
+
+                                        <!-- personal detail -->
+                                        <div id="p-d" class="search-cell">
+                                            <span class="name">Dr. Wade Mane</span>
+                                            <span class="speciality">Dentist</span>
+                                        </div>
+
+                                        <!-- work detail -->
+                                        <div id="w-d" class="search-cell">
+                                            <span class="name"> Aris Specialist Hospital</span>
+                                            <span class="fee">Appt. fee - <strong>$40</strong> </span>
+                                        </div>
+                                        <!-- schedule detail -->
+                                        <div id="s-d" class="search-cell">
+                                            <ul class="nav flex-sm-row">
+                                                <li class="nav-item has">S</li>
+                                                <li class="nav-item has">M</li>
+                                                <li class="nav-item">T</li>
+                                                <li class="nav-item ">W</li>
+                                                <li class="nav-item">T</li>
+                                                <li class="nav-item has">F</li>
+                                                <li class="nav-item">S</li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- ratings -->
+                                        <span class="ratings" class="search-cell">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                    </a>
                                 </div>
                                 <div class="col-md-3"></div>
                             </div>
@@ -357,22 +393,25 @@
         <div class="search-component search-select-display sidebar-right bg-theme-gradient">
             <div class="display-wrapper">
                 <div class="user-img text-center">
-                    <img src="../images/a4.jpg"  class="rounded img-fluid"  alt="Doctor's image">
+                    <img src=""  class="rounded "  alt="Doctor's image">
 
                 </div>
-                <div class="details text-center">
-                    <span class="name">Dr. Viola Davis</span><br>
-                    <span class="speciality">Gynaecologist</span>
+                <div class="details">
+                    <span class="name"></span>
+                    <span class="speciality small"></span>
                 </div>
 
-                <div class="actions p-4">
+                <div class="actions ">
 
-                    <a href="#" class="btn btn-block py-2 px-4 btn-light">view profile</a>
-                    <a href="#" class="btn btn-block py-2 px-4 btn-light">request appointment</a>
+                    <a href="#" class="btn  py-2 btn-block text-center " id="profile-view" data-toggle="modal" data-target="#profileModal">view profile</a>
+                    <a href="#" class="btn  py-2 btn-block text-center " id="appointment-req">request appointment</a>
                 </div>
+
+                
             </div>
         </div>
 
+      
         <!-- RIGHT SIDEBAR TO DISPLAY APPOINTMENT INFORMTION -->
         <!-- <div id="appointment-display" class=" appointment-dc bg-theme-gradient">
             <div class="display-wrapper">
@@ -381,6 +420,71 @@
             </div>
         </div> -->
         <!-- end content -->
+
+
+        <!-- profile modal -->
+        <div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                   
+                    <div class="modal-body p-0">
+                        <div class="profile-container">
+                            <div class="profile-img">
+                                <img src="" alt="profile image" class="img-fluid">
+                            </div>
+                            <div class="profile-details bg-theme-gradient">
+                                <div class="fee-wrap">
+                                    <div class="p-1 text-center">FEE</div>
+                                    <span class="fee p-1"></span>
+                                </div>
+                                <div class="p-4">
+                                    <div class="category">
+                                        <span class="cat-title">PROFILE</span>
+                                        <span class="name font-weight-bold"></span>
+                                        <span class="degree">MBBS</span>
+                                        <span class="office-name"></span>
+                                        <span class="country">Romania</span>
+                                    </div>
+                                    <div class="category">
+                                        <span class="cat-title">speciality</span>
+                                        <div class="row mb-3 mt-2">
+                                            <div class="col-md-6">
+                                                <a href="#" class="d-block p-2 rounded-pill spec">Cardiology</a href="#">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a href="#" class="d-block p-2 rounded-pill spec">Gynecology</a href="#">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <a href="#" class="d-block p-2 rounded-pill spec">Dermatology</a href="#">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a href="#" class="d-block p-2 rounded-pill spec">Periodontology</a href="#">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <span class="cat-title">experience</span>
+                                        <span>25+ Years</span>
+                                    </div>
+                                    <div class="category">
+                                        <span class="cat-title">CONTACT</span>
+                                        <span>+57 87 576 2226</span>
+                                    </div>
+                                    <div class="category">
+                                        <span class="cat-title">ADDRESS</span>
+                                        <span>Strada Florilor Nr.1, Bl.2, Sc.3, Et.4, Ap.5, Ploiesti, Prahova, Romania</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
 
     </div>
     <!-- end wrapper -->

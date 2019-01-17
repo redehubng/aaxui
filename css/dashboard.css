@@ -356,11 +356,14 @@ a.download {
     border: 1px solid #209fd9;
     cursor: pointer;
 }
-
+.filter .dropdown-menu{
+    background: #fff;
+}
 .filter .dropdown-item.active{
     background: #209fd9;
     color: #fff;
 }
+
 
 .search-item{
     display: flex;
@@ -369,20 +372,28 @@ a.download {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1rem ;
     cursor: pointer;
+  
 }
 .search-item:hover{
-    background: rgba(0, 0, 0, 0.04);
+    background: rgba(0, 0, 0, 0.03);
 }
 .search-item img{
     margin-right: 1rem;
 }
 .search-cell{
-    padding: 0 1rem;
+    padding: 0 .5rem;
     display: block;
+    font-size: 14px;
+    width: 20%;
+}
+
+.search-cell#s-d{
+    width: 30%;
 }
 
 .search-cell span{
     display: block;
+
     text-align: center;
 }
 
@@ -396,6 +407,86 @@ a.download {
     background: #147ba7;
     color: #fff;
 }
+.search-select-display .display-wrapper{
+    padding: 2.2rem;
+    display: none;
+}
+.search-select-display img{
+    width: 100%;
+}
+
+.search-select-display .details{
+    margin-top: 1rem;
+}
+.search-select-display .details span{
+    display: block;
+    text-align: center;
+}
+
+.search-select-display .details .name{
+    font-size: 1.5rem;
+}
+
+.search-select-display .actions{
+    padding : 1.5rem 0;
+}
+.actions #profile-view{
+    background: #fff;
+    color: #147ba7;
+}
+.actions #appointment-req{
+    background: #F8C78E;
+    color: #147ba7;
+}
+
+.profile-container{
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.profile-img, .profile-details{
+    width: 50%;
+    position: relative;
+}
+
+.profile-container .profile-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.profile-details .category{
+    margin: 0 0 1rem 0;
+    font-size: 16px;
+}
+.profile-details .category span{
+   display: block;
+}
+.profile-details .category .cat-title{
+    display: block;
+    color: #F8C78E;
+    text-transform: uppercase;
+}
+
+.category .spec{
+    background: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    color: #fff;
+}
+
+.fee-wrap{
+    width: 75px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+.fee-wrap .fee{
+    display: block;
+    background: #C06802;
+    color: #fff;
+    text-align: center;
+}
+
 /*----------------------------------------------------
     FOOTER STYLE
 -----------------------------------------------------*/

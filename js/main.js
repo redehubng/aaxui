@@ -36,15 +36,22 @@
             
 
     // SEARCH SCRIPT
-            let $searchForm = $('.search-form');
-            let $searchComponents = $('.search-component');
-            let $ssDisplay = $('.search-select-display');
-            let $filterItem = $('.filter .dropdown-item');
+            // GLOBALS
+            let $searchForm = $('.search-form'),
+                $searchComponents = $('.search-component'),
+                $searchOption= $('.search-options'),
+                $ssDisplay = $('.search-select-display'),
+                $searchItem = $('.search-item'),
+                $filterItem = $('.filter .dropdown-item'),
+                $profileContainer = $('.profile-container');
+               
+
             // show the search-components
            
             
             function openAction() {
                 $searchComponents.show().css('z-index', '3'),
+                $searchOption.css('z-index', '10'),
                 $ssDisplay.css('opacity', '1');
                 $('.crumb').hide();
 
@@ -62,6 +69,7 @@
             $searchForm.keyup(function(){
                 if($searchForm.val() == ""){
                    closeAction();
+                   $('.display-wrapper').hide();
                 }
 
             });
@@ -80,5 +88,31 @@
                let filterText = $(this).text();
                $('.filter-type').text(filterText);
             })
+
+
+            // GET SERACH RESULT INFO 
+
+            $searchItem.click(function(){
+                    $('.display-wrapper').show();
+
+                let name =       $(this).find('#p-d').find('.name').text(),
+                    speciality = $(this).find('#p-d').find('.speciality').text(),
+                    workName =   $(this).find('#w-d').find('.name').text(),
+                    fee =        $(this).find('#w-d').find('.fee strong').text(),
+                    imgSrc=      $(this).find('.doc-img').attr('src');
+
+                    
+                    $ssDisplay.find('.user-img img').attr('src', imgSrc);
+                    $ssDisplay.find('.details .name').text(name);
+                    $ssDisplay.find('.details .speciality').text(speciality);
+
+                    $profileContainer.find('.profile-img img').attr('src', imgSrc),
+                    $profileContainer.find('.profile-details .category .name').text(name),
+                    $profileContainer.find('.profile-details .category .office-name').text(workName),
+                    $profileContainer.find('.profile-details .fee').text(fee);
+
+
+              
+            });
 
 });
