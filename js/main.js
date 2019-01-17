@@ -54,6 +54,7 @@
                 $searchOption.css('z-index', '10'),
                 $ssDisplay.css('opacity', '1');
                 $('.crumb').hide();
+                $('.wrapper-content .content').hide();
 
             }
 
@@ -61,6 +62,7 @@
                 $searchComponents.hide().css('z-index', '-10'),
                 $ssDisplay.css('opacity', '0');
                 $('.crumb').show();
+                $('.wrapper-content .content').show();
 
             }
 
@@ -69,7 +71,7 @@
             $searchForm.keyup(function(){
                 if($searchForm.val() == ""){
                    closeAction();
-                   $('.display-wrapper').hide();
+                    $ssDisplay.find('.display-wrapper').hide();
                 }
 
             });
@@ -93,7 +95,7 @@
             // GET SERACH RESULT INFO 
 
             $searchItem.click(function(){
-                    $('.display-wrapper').show();
+                    $ssDisplay.find('.display-wrapper').show();
 
                 let name =       $(this).find('#p-d').find('.name').text(),
                     speciality = $(this).find('#p-d').find('.speciality').text(),
