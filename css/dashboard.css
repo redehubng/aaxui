@@ -678,6 +678,17 @@ a.sign-out{
 }
 
 /* ---------------------------------------------------
+    REQUEST STYLE
+----------------------------------------------------- */
+
+.info-head{
+    margin-top: -40px;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: .5rem 1rem;
+}
+
+/* ---------------------------------------------------
     HELPERS STYLE
 ----------------------------------------------------- */
 .online-status{
@@ -931,7 +942,7 @@ nav[aria-label="breadcrumb"].dot-separator .breadcrumb-item+.breadcrumb-item::be
 ----------------------------------------------------- */
 
 .form-control {
-    border-radius: 0;
+    background: #fff;
 }
 
 .form-control:focus {
