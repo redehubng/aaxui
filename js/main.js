@@ -120,5 +120,25 @@
             
             // MESSAGE SCRIPT
 
-            
+            $('.msg-search-icon').click(function() {
+                $('.msg-contact-head .head-main').hide();
+                $('.msg-search').show();
+            })
+
+            $('.search-close').click(function() {
+                $('.msg-contact-head .head-main').show();
+                $('.msg-search').hide();
+            })
+
+            if(window.screen.width < 768){
+                $('#msg-contact-over').append($('.msg-contact'));
+            }
+            $('.msg-contact-toggle').click(function (e) {
+                e.preventDefault();
+                $('.contact-over').addClass('active');
+            })
+            $('.contact-close').click(function (e) {
+                e.preventDefault();
+                $('.contact-over').removeClass('active');
+            })
 });

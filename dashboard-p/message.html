@@ -421,19 +421,24 @@
                                 <div id="messaging">
                                    <div class="row">
                                        <div class="col-md-3 pr-0">
-                                            <div class="msg-contact border">
+                                            <div class="msg-contact border ">
                                                 <div class="msg-contact-head border-bottom clearfix">
                                                     <div class="head-main">
                                                         Conversation
-                                                         <span class="msg-search-icon float-right"><i class="fas fa-search"></i></span>
+                                                        <a class="contact-close float-right px-3"><i class="fas fa-arrow-right"></i></a>
+                                                         <a class="msg-search-icon float-right "><i class="fas fa-search"></i></a>
+
                                                     </div>
                                           
                                                     
-                                                    <!-- <form action="" method="post" class="msg-search">
+                                                    <form action="" method="post" class="msg-search">
                                                         <input type="search" class="form-default form-control" placeholder="search..">
-                                                    </form> -->
+                                                        <span class="search-close">
+                                                            <i class="fas fa-arrow-right fa-sm"></i>
+                                                        </span>
+                                                    </form>
                                                 </div>
-                                                <div class="msg-contact-body">
+                                                <div class="msg-contact-body scroll">
                                                    <a class="msg-contact-list-item">
                                                         <div class="media align-items-center">
                                                             <img src="../images/a5.jpg" height="45" class="mr-3 rounded-circle avatar" alt="Doctor image">
@@ -441,56 +446,40 @@
                                                                  
                                                                 <span class="text-darker d-inline-block text-truncate name"> 
                                                                     <span class="online-status online"></span>
-                                                                    Dr. Bogdana Madalin
-                                                                   
+                                                                    Dr. Bogdana Madalinaa
+                                                                    
                                                                 </span>
+                                                                <span id="msg-count" class="badge badge-danger">1</span>
+                                                                <span id="last-online">2m</span>
                                                         
                                                             </div>
                                                         </div>
                                                    </a>
                                                    <a class="msg-contact-list-item">
                                                         <div class="media align-items-center">
-                                                            <img src="../images/a1.jpg" height="45" class="mr-3 rounded-circle " alt="Doctor image">
+                                                            <img src="../images/a1.jpg" height="45" class="mr-3 rounded-circle avatar" alt="Doctor image">
                                                             <div class="media-body">
                                                                  
                                                                 <span class="text-darker d-inline-block text-truncate name"> 
                                                                     <span class="online-status online"></span>
-                                                                    Dr. Călin Joldea</span>
+                                                                    Dr. Yakushi Parker
+                                                                    
+                                                                </span>
+                                                                <span id="msg-count" class="badge badge-danger">2</span>
+                                                                <span id="last-online">2d</span>
                                                         
                                                             </div>
                                                         </div>
                                                    </a>
-                                                   <a class="msg-contact-list-item">
-                                                        <div class="media align-items-center">
-                                                            <img src="../images/a6.jpg" height="45" class="mr-3 rounded-circle avatar" alt="Doctor image">
-                                                            <div class="media-body">
-                                                                 
-                                                                <span class="text-darker d-inline-block text-truncate name"> 
-                                                                    <span class="online-status online"></span>
-                                                                    Dr. Anders Maya</span>
-                                                        
-                                                            </div>
-                                                        </div>
-                                                   </a>
-                                                   <a class="msg-contact-list-item">
-                                                        <div class="media align-items-center">
-                                                            <img src="../images/a3.jpg" height="45" class="mr-3 rounded-circle " alt="Doctor image">
-                                                            <div class="media-body">
-                                                                 
-                                                                <span class="text-darker d-inline-block text-truncate name"> 
-                                                                    <span class="online-status online"></span>
-                                                                    Dr. Cory Bryan</span>
-                                                        
-                                                            </div>
-                                                        </div>
-                                                   </a>
+                                                 
                                                   
                                              
                                                 </div>
                                             </div>
                                        </div>
-                                       <div class="col-md-9 pl-0">
-                                            <div class="msg-chat border">
+                                       <div class="col-md-9 pl-0 position-relative">
+                                           <div id="msg-contact-over" class="contact-over"></div>
+                                            <div class="msg-chat border ">
                                                 <div class="msg-chat-head border-bottom d-flex align-items-center justify-content-between">
                                                     <div class="media align-items-center">
                                                         <img src="../images/a5.jpg" height="45" class="mr-3 rounded-circle " alt="Doctor image">
@@ -498,10 +487,11 @@
                                                             <h5 class="text-darker font-weight-bold">Dr. Bogdana Madalin</h5>
                                                         </div>
                                                     </div>
+                                                    <a href="" class="float-right msg-contact-toggle text-darker"><i class="fas fa-ellipsis-v fa-lg"></i></a>
                                                 
                                                 </div>
 
-                                                <div class="msg-chat-body">
+                                                <div class="msg-chat-body scroll">
                                                     <div class="chat clearfix">
                                                         <div class="msg-bubble">
                                                             <div class="bubble bubble-sender">
