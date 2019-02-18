@@ -245,11 +245,13 @@ a.download {
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
+
 #content {
     width: 100%;
     transition: all 0.3s;
     margin-left: 233px;
     margin-top: 86px;
+   
 }
 
 #content.active{
@@ -260,6 +262,9 @@ a.download {
     border-bottom: 1px solid rgba(0,0,0, .03896);
 }
 
+.main-content{
+     min-height: 55vh;
+}
 .appointment-dc , .sidebar-right{
     position: fixed;
     top:0;
