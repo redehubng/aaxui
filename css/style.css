@@ -571,7 +571,7 @@ nav.main-nav{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 1rem;
+    padding: 0;
 }
 
 .subscription-title{
