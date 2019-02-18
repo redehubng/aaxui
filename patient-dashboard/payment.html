@@ -1,0 +1,779 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="../images/favicon.png" type="image/png">
+
+
+    <!-- BOOTSTRAP STYLE -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <!-- FULLCALENDAR STYLE -->
+    <link rel="stylesheet" href="../css/fullcalendar.min.css">
+
+
+
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- DASHBOARD STYLE -->
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+
+
+
+    <title>Axya - Dashboard</title>
+</head>
+
+<body>
+    <div class="d-header dm-nav">
+
+        <div class="trans-box">
+            <nav class="navbar navbar-expand-lg main-nav ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="../images/axya-logo.png" height="47" alt="axya logo">
+                    </a>
+                    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <svg width="35" height="20" viewBox="0 0 40 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0H40V4H0V0Z" fill="white" />
+                                <path d="M0.5 10.5H35.5V14.5H0.5V10.5Z" fill="white" />
+                                <path d="M0 21H40V25H0V21Z" fill="white" />
+                            </svg>
+                            <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.9998 15.3333C25.1082 15.3333 26.8332 13.6083 26.8332 11.5C26.8332 9.39163 25.1082 7.66663 22.9998 7.66663C20.8915 7.66663 19.1665 9.39163 19.1665 11.5C19.1665 13.6083 20.8915 15.3333 22.9998 15.3333ZM22.9998 19.1666C20.8915 19.1666 19.1665 20.8916 19.1665 23C19.1665 25.1083 20.8915 26.8333 22.9998 26.8333C25.1082 26.8333 26.8332 25.1083 26.8332 23C26.8332 20.8916 25.1082 19.1666 22.9998 19.1666ZM22.9998 30.6666C20.8915 30.6666 19.1665 32.3916 19.1665 34.5C19.1665 36.6083 20.8915 38.3333 22.9998 38.3333C25.1082 38.3333 26.8332 36.6083 26.8332 34.5C26.8332 32.3916 25.1082 30.6666 22.9998 30.6666Z"
+                                    fill="white" />
+                            </svg>
+
+
+                        </span>
+                    </button> -->
+
+                    <div class=" dashboard-navbar" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto xs-nav  align-items-center">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../index.html">Home
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">FAQs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+                        </ul>
+
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2 m-0 border-0 rounded search-form" type="search"
+                                placeholder="Search..." aria-label="Search">
+
+                        </form>
+                        <a class="buttom-nav-toggler text-white ml-2" data-toggle="collapse" href="#extra-buttom-nav"
+                            role="button" aria-expanded="false" aria-controls="extra-buttom-nav">
+                            <!-- <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.9998 15.3333C25.1082 15.3333 26.8332 13.6083 26.8332 11.5C26.8332 9.39163 25.1082 7.66663 22.9998 7.66663C20.8915 7.66663 19.1665 9.39163 19.1665 11.5C19.1665 13.6083 20.8915 15.3333 22.9998 15.3333ZM22.9998 19.1666C20.8915 19.1666 19.1665 20.8916 19.1665 23C19.1665 25.1083 20.8915 26.8333 22.9998 26.8333C25.1082 26.8333 26.8332 25.1083 26.8332 23C26.8332 20.8916 25.1082 19.1666 22.9998 19.1666ZM22.9998 30.6666C20.8915 30.6666 19.1665 32.3916 19.1665 34.5C19.1665 36.6083 20.8915 38.3333 22.9998 38.3333C25.1082 38.3333 26.8332 36.6083 26.8332 34.5C26.8332 32.3916 25.1082 30.6666 22.9998 30.6666Z"
+                                    fill="white" />
+                            </svg> -->
+                            <i class="fas fa-bars fa-2x"></i>
+                        </a>
+                        <ul id="extra-buttom-nav" class=" navbar-nav align-items-center  ">
+
+                            <li class="nav-item">
+                                <a class="nav-link mr-1 text-white" href="#"><i class="fas fa-cog fa-2x"></i></a>
+                            </li>
+                            <li class="nav-item position-relative">
+                                <a class="nav-link mr-1 text-white" href="notification.html"><i
+                                        class="fas fa-bell fa-2x"></i></a>
+                                <span class="notification-count">1</span>
+                            </li>
+                            <li class="nav-item nav-avatar ml-3">
+                                <img src="../images/a1.jpg" height="55" alt="user avatar" class="rounded-circle">
+                            </li>
+                            <li class="nav-item nav-opt">
+                                <a class="nav-link ml-2 text-white " data-toggle="collapse" href="#optDropdown"
+                                    role="button" aria-expanded="false" aria-controls="optDropdown">
+                                    <i class="fas fa-ellipsis-v fa-2x"></i>
+                                </a>
+                                <div class="collapse opt-menu shadow-lg" id="optDropdown">
+                                    <div class="opt-items">
+                                        <div class="extra-opt-items">
+                                            <a href="#" class="opt-item">Home</a>
+
+                                        </div>
+                                        <a href="#" class="opt-item">Dashboard</a>
+                                        <a href="#" class="opt-item">Profile</a>
+
+                                        <a href="#" class="opt-item">Account</a>
+                                        <a href="#" class="opt-item">Payment Option</a>
+                                        <a href="#" class="opt-item">Help</a>
+                                        <a href="#" class="opt-item sign-out">Sign out</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div id="buttom-nav"></div>
+    <div class="wrapper">
+
+        <nav id="sidebar">
+
+            <!-- Sidebar Header -->
+            <div class="sidebar-header ">
+                <div class="avatar">
+                    <img src="../images/a1.jpg" height="50" class="rounded-circle" alt="">
+                    <span class="online-status online mx-1"></span>John Doe
+                </div>
+                <div class="avatar-mini">
+                    <img src="../images/a1.jpg" height="50" class="rounded-circle" alt="">
+                    <span class="online-status online"></span>
+                </div>
+                <!-- <h3>Sublime Admin</h3>
+                <strong>SA</strong> -->
+            </div>
+
+            <ul class="nav flex-sm-column">
+
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <span class="icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.85938 0H4.26562V1.45312H2.85938V0Z" fill="white" />
+                                <path d="M5.67188 0H7.07812V1.45312H5.67188V0Z" fill="white" />
+                                <path d="M8.48438 0H9.89062V1.45312H8.48438V0Z" fill="white" />
+                                <path d="M11.2969 0H12.7031V1.45312H11.2969V0Z" fill="white" />
+                                <path d="M14.1094 0H15.5156V1.45312H14.1094V0Z" fill="white" />
+                                <path d="M16.9219 0H18.3281V1.45312H16.9219V0Z" fill="white" />
+                                <path d="M19.7344 0H21.1406V1.45312H19.7344V0Z" fill="white" />
+                                <path
+                                    d="M21.1406 1.45312V4.26562H19.7344V1.45312H18.3281V4.26562H16.9219V1.45312H15.5156V4.26562H14.1094V1.45312H12.7031V4.26562H11.2969V1.45312H9.89062V4.26562H8.48438V1.45312H7.07812V4.26562H5.67188V1.45312H4.26562V4.26562H2.85938V1.45312H0V5.67188H24V1.45312H21.1406Z"
+                                    fill="white" />
+                                <path
+                                    d="M11.2969 18.3281H12.7031V15.5156H15.5156V14.1094H12.7031V11.2969H11.2969V14.1094H8.48438V15.5156H11.2969V18.3281Z"
+                                    fill="white" />
+                                <path
+                                    d="M0 24H24V7.07812H0V24ZM7.07812 12.7031H9.89062V9.89062H14.1094V12.7031H16.9219V16.9219H14.1094V19.7344H9.89062V16.9219H7.07812V12.7031Z"
+                                    fill="white" />
+                            </svg>
+
+                        </span>
+                        <span class="navlink-active">My Appointments</span>
+                    </a>
+                </li>
+
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="#">
+                        <span class="icon">
+                            <svg width="20" height="26" viewBox="0 0 20 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.0002 5.83984C6.8411 5.83984 4.271 8.3457 4.271 11.4258C4.271 14.5059 6.8411 17.0117 10.0002 17.0117C13.1592 17.0117 15.7293 14.5059 15.7293 11.4258C15.7293 8.3457 13.1592 5.83984 10.0002 5.83984ZM12.517 13.3541C12.3893 13.6061 12.2212 13.8126 12.0126 13.9734C11.8039 14.1344 11.5657 14.2557 11.2981 14.3377C11.0303 14.4196 10.7531 14.4697 10.4668 14.4879V15.5898H9.71959V14.4697C9.2899 14.4333 8.86334 14.3513 8.43995 14.2238C8.01647 14.0963 7.63672 13.9355 7.30042 13.7412L8.08501 12.1839C8.25313 12.2872 8.43365 12.3842 8.62678 12.4753C8.78865 12.5543 8.97704 12.6317 9.19183 12.7076C9.40662 12.7835 9.62615 12.8366 9.85032 12.8669V12.0655C9.65719 12.017 9.46412 11.9594 9.2712 11.8925C8.97839 11.7955 8.72626 11.6908 8.51464 11.5783C8.30287 11.4661 8.12844 11.3385 7.99157 11.1958C7.85454 11.0532 7.75339 10.8908 7.68803 10.7086C7.62261 10.5265 7.5899 10.317 7.5899 10.0803C7.5899 9.75244 7.64594 9.46258 7.75803 9.2106C7.87011 8.95873 8.02261 8.74159 8.21574 8.55948C8.40865 8.37738 8.63438 8.23164 8.89287 8.12236C9.15115 8.01308 9.42672 7.94336 9.71949 7.91289V6.99309H10.4667V7.92198C10.6722 7.9463 10.8714 7.98271 11.0645 8.03126C11.2575 8.07991 11.4428 8.13602 11.6202 8.19975C11.7977 8.26353 11.9642 8.33036 12.1199 8.40008C12.2755 8.46996 12.4188 8.53526 12.5496 8.59589L11.765 10.0621C11.628 9.97709 11.4785 9.89813 11.3167 9.82526C11.1796 9.75853 11.0255 9.69637 10.8543 9.63859C10.683 9.581 10.5102 9.53702 10.3359 9.50655V10.3262C10.392 10.3384 10.4511 10.3551 10.5134 10.3762C10.5756 10.3976 10.6409 10.4172 10.7095 10.4354C11.0145 10.5265 11.2901 10.6267 11.5362 10.736C11.7821 10.8453 11.9922 10.9743 12.1666 11.123C12.3409 11.2719 12.4749 11.4524 12.5682 11.6649C12.6616 11.8774 12.7083 12.1354 12.7083 12.4389C12.7085 12.7972 12.6445 13.1023 12.517 13.3541Z"
+                                    fill="white" />
+                                <path
+                                    d="M9.47656 9.78886C9.47656 9.87991 9.5076 9.95436 9.56995 10.012C9.63214 10.0697 9.72552 10.1228 9.85016 10.1713V9.47925C9.60099 9.50972 9.47656 9.61285 9.47656 9.78886Z"
+                                    fill="white" />
+                                <path
+                                    d="M10.6348 12.3888C10.5601 12.325 10.4604 12.269 10.3359 12.2203V12.8942C10.4854 12.8821 10.5912 12.8518 10.6535 12.8032C10.7157 12.7546 10.7469 12.6909 10.7469 12.6119C10.7469 12.527 10.7095 12.4526 10.6348 12.3888Z"
+                                    fill="white" />
+                                <path
+                                    d="M19.2188 4.0625C17.352 4.0625 15.8333 2.58177 15.8333 0.761719V0H4.16667V0.761719C4.16667 2.58177 2.64797 4.0625 0.78125 4.0625H0V16.5513L9.0887 26H10.9113L20 16.5513V4.0625H19.2188ZM10 18.5352C5.97937 18.5352 2.70833 15.3459 2.70833 11.4258C2.70833 7.50567 5.97937 4.31641 10 4.31641C14.0206 4.31641 17.2917 7.50567 17.2917 11.4258C17.2917 15.3459 14.0206 18.5352 10 18.5352Z"
+                                    fill="white" />
+                            </svg>
+
+                        </span>
+                        <span class="navlink-active">Transactions</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+
+                    <a class="nav-link" href="#">
+                        <span class="icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M23.9806 0.789727C23.9636 0.710216 23.9346 0.633205 23.8981 0.558694C23.8886 0.539692 23.8791 0.521189 23.8686 0.502186C23.8256 0.426676 23.7756 0.354165 23.7111 0.289656C23.6465 0.225147 23.5735 0.17514 23.498 0.132134C23.48 0.121633 23.462 0.112631 23.443 0.10313C23.3665 0.0656247 23.288 0.0351204 23.206 0.018118C23.2035 0.017618 23.202 0.0171179 23.2 0.0166178C23.1145 -0.00038456 23.0275 -0.00288491 22.9404 0.00261586C22.9214 0.00361601 22.9024 0.00561629 22.8834 0.00811664C22.7954 0.0186181 22.7079 0.0371207 22.6244 0.0711255L0.621767 9.07239C0.229211 9.23292 -0.019324 9.62347 0.00117888 10.0465C0.0216818 10.4701 0.306722 10.8346 0.71328 10.9562L10.1986 13.8021L13.044 23.2874C13.1661 23.6935 13.5306 23.9785 13.9537 23.999C13.9702 23.9995 13.9862 24 14.0027 24C14.4067 24 14.7738 23.756 14.9283 23.3784L23.9296 1.37531C23.9296 1.37481 23.9296 1.37481 23.9296 1.37431C23.9631 1.2923 23.9811 1.20679 23.9916 1.12027C23.9941 1.09877 23.9966 1.07777 23.9976 1.05626C24.0026 0.971252 24.0006 0.88574 23.9841 0.801729C23.9831 0.797728 23.9816 0.793727 23.9806 0.789727ZM18.7813 3.80415L10.7172 11.8688L3.99725 9.8525L18.7813 3.80415ZM14.1472 20.0034L12.1314 13.283L20.1951 5.21935L14.1472 20.0034Z"
+                                    fill="white" />
+                                <path
+                                    d="M8.70845 15.2918C8.31789 14.9013 7.6848 14.9013 7.29425 15.2918L4.79389 17.7922C4.40334 18.1827 4.40334 18.8158 4.79389 19.2064C4.98942 19.4019 5.24496 19.4994 5.50099 19.4994C5.75703 19.4994 6.01257 19.4019 6.20809 19.2064L8.70845 16.706C9.099 16.3155 9.099 15.6824 8.70845 15.2918Z"
+                                    fill="white" />
+                                <path
+                                    d="M1.70761 18.2062L3.20782 16.706C3.59838 16.3155 3.59838 15.6824 3.20782 15.2918C2.81726 14.9013 2.18417 14.9013 1.79362 15.2918L0.293405 16.792C-0.0971506 17.1826 -0.0971506 17.8157 0.293405 18.2062C0.488933 18.4018 0.744469 18.4993 1.00051 18.4993C1.25654 18.4993 1.51208 18.4018 1.70761 18.2062Z"
+                                    fill="white" />
+                                <path
+                                    d="M7.29411 20.7926L5.79389 22.2928C5.40334 22.6833 5.40334 23.3164 5.79389 23.707C5.98942 23.9025 6.24496 24 6.50099 24C6.75703 24 7.01257 23.9025 7.20809 23.707L8.70831 22.2067C9.09886 21.8162 9.09886 21.1831 8.70831 20.7926C8.31775 20.402 7.68466 20.402 7.29411 20.7926Z"
+                                    fill="white" />
+                            </svg>
+
+                        </span>
+                        <span class="navlink-active">Direct Messages</span> <span class="badge badge-danger">1</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+
+                    <a class="nav-link" data-toggle="collapse" href="#testSubmenu" role="button" aria-expanded="false"
+                        aria-controls="testSubmenu">
+                        <span class="icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M23.9806 0.789727C23.9636 0.710216 23.9346 0.633205 23.8981 0.558694C23.8886 0.539692 23.8791 0.521189 23.8686 0.502186C23.8256 0.426676 23.7756 0.354165 23.7111 0.289656C23.6465 0.225147 23.5735 0.17514 23.498 0.132134C23.48 0.121633 23.462 0.112631 23.443 0.10313C23.3665 0.0656247 23.288 0.0351204 23.206 0.018118C23.2035 0.017618 23.202 0.0171179 23.2 0.0166178C23.1145 -0.00038456 23.0275 -0.00288491 22.9404 0.00261586C22.9214 0.00361601 22.9024 0.00561629 22.8834 0.00811664C22.7954 0.0186181 22.7079 0.0371207 22.6244 0.0711255L0.621767 9.07239C0.229211 9.23292 -0.019324 9.62347 0.00117888 10.0465C0.0216818 10.4701 0.306722 10.8346 0.71328 10.9562L10.1986 13.8021L13.044 23.2874C13.1661 23.6935 13.5306 23.9785 13.9537 23.999C13.9702 23.9995 13.9862 24 14.0027 24C14.4067 24 14.7738 23.756 14.9283 23.3784L23.9296 1.37531C23.9296 1.37481 23.9296 1.37481 23.9296 1.37431C23.9631 1.2923 23.9811 1.20679 23.9916 1.12027C23.9941 1.09877 23.9966 1.07777 23.9976 1.05626C24.0026 0.971252 24.0006 0.88574 23.9841 0.801729C23.9831 0.797728 23.9816 0.793727 23.9806 0.789727ZM18.7813 3.80415L10.7172 11.8688L3.99725 9.8525L18.7813 3.80415ZM14.1472 20.0034L12.1314 13.283L20.1951 5.21935L14.1472 20.0034Z"
+                                    fill="white" />
+                                <path
+                                    d="M8.70845 15.2918C8.31789 14.9013 7.6848 14.9013 7.29425 15.2918L4.79389 17.7922C4.40334 18.1827 4.40334 18.8158 4.79389 19.2064C4.98942 19.4019 5.24496 19.4994 5.50099 19.4994C5.75703 19.4994 6.01257 19.4019 6.20809 19.2064L8.70845 16.706C9.099 16.3155 9.099 15.6824 8.70845 15.2918Z"
+                                    fill="white" />
+                                <path
+                                    d="M1.70761 18.2062L3.20782 16.706C3.59838 16.3155 3.59838 15.6824 3.20782 15.2918C2.81726 14.9013 2.18417 14.9013 1.79362 15.2918L0.293405 16.792C-0.0971506 17.1826 -0.0971506 17.8157 0.293405 18.2062C0.488933 18.4018 0.744469 18.4993 1.00051 18.4993C1.25654 18.4993 1.51208 18.4018 1.70761 18.2062Z"
+                                    fill="white" />
+                                <path
+                                    d="M7.29411 20.7926L5.79389 22.2928C5.40334 22.6833 5.40334 23.3164 5.79389 23.707C5.98942 23.9025 6.24496 24 6.50099 24C6.75703 24 7.01257 23.9025 7.20809 23.707L8.70831 22.2067C9.09886 21.8162 9.09886 21.1831 8.70831 20.7926C8.31775 20.402 7.68466 20.402 7.29411 20.7926Z"
+                                    fill="white" />
+                            </svg>
+
+                        </span>
+                        <span class="navlink-active">menu level</span>
+                    </a>
+                    <ul id="testSubmenu" class=" collapse sub-menu nav flex-sm-column">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <span class="icon">
+                                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M23.9806 0.789727C23.9636 0.710216 23.9346 0.633205 23.8981 0.558694C23.8886 0.539692 23.8791 0.521189 23.8686 0.502186C23.8256 0.426676 23.7756 0.354165 23.7111 0.289656C23.6465 0.225147 23.5735 0.17514 23.498 0.132134C23.48 0.121633 23.462 0.112631 23.443 0.10313C23.3665 0.0656247 23.288 0.0351204 23.206 0.018118C23.2035 0.017618 23.202 0.0171179 23.2 0.0166178C23.1145 -0.00038456 23.0275 -0.00288491 22.9404 0.00261586C22.9214 0.00361601 22.9024 0.00561629 22.8834 0.00811664C22.7954 0.0186181 22.7079 0.0371207 22.6244 0.0711255L0.621767 9.07239C0.229211 9.23292 -0.019324 9.62347 0.00117888 10.0465C0.0216818 10.4701 0.306722 10.8346 0.71328 10.9562L10.1986 13.8021L13.044 23.2874C13.1661 23.6935 13.5306 23.9785 13.9537 23.999C13.9702 23.9995 13.9862 24 14.0027 24C14.4067 24 14.7738 23.756 14.9283 23.3784L23.9296 1.37531C23.9296 1.37481 23.9296 1.37481 23.9296 1.37431C23.9631 1.2923 23.9811 1.20679 23.9916 1.12027C23.9941 1.09877 23.9966 1.07777 23.9976 1.05626C24.0026 0.971252 24.0006 0.88574 23.9841 0.801729C23.9831 0.797728 23.9816 0.793727 23.9806 0.789727ZM18.7813 3.80415L10.7172 11.8688L3.99725 9.8525L18.7813 3.80415ZM14.1472 20.0034L12.1314 13.283L20.1951 5.21935L14.1472 20.0034Z"
+                                            fill="white" />
+                                        <path
+                                            d="M8.70845 15.2918C8.31789 14.9013 7.6848 14.9013 7.29425 15.2918L4.79389 17.7922C4.40334 18.1827 4.40334 18.8158 4.79389 19.2064C4.98942 19.4019 5.24496 19.4994 5.50099 19.4994C5.75703 19.4994 6.01257 19.4019 6.20809 19.2064L8.70845 16.706C9.099 16.3155 9.099 15.6824 8.70845 15.2918Z"
+                                            fill="white" />
+                                        <path
+                                            d="M1.70761 18.2062L3.20782 16.706C3.59838 16.3155 3.59838 15.6824 3.20782 15.2918C2.81726 14.9013 2.18417 14.9013 1.79362 15.2918L0.293405 16.792C-0.0971506 17.1826 -0.0971506 17.8157 0.293405 18.2062C0.488933 18.4018 0.744469 18.4993 1.00051 18.4993C1.25654 18.4993 1.51208 18.4018 1.70761 18.2062Z"
+                                            fill="white" />
+                                        <path
+                                            d="M7.29411 20.7926L5.79389 22.2928C5.40334 22.6833 5.40334 23.3164 5.79389 23.707C5.98942 23.9025 6.24496 24 6.50099 24C6.75703 24 7.01257 23.9025 7.20809 23.707L8.70831 22.2067C9.09886 21.8162 9.09886 21.1831 8.70831 20.7926C8.31775 20.402 7.68466 20.402 7.29411 20.7926Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </span>
+                                <span class="navlink-active">submenu1</span>
+                            </a>
+
+                            <a href="#" class="nav-link">
+                                <span class="icon">
+                                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M23.9806 0.789727C23.9636 0.710216 23.9346 0.633205 23.8981 0.558694C23.8886 0.539692 23.8791 0.521189 23.8686 0.502186C23.8256 0.426676 23.7756 0.354165 23.7111 0.289656C23.6465 0.225147 23.5735 0.17514 23.498 0.132134C23.48 0.121633 23.462 0.112631 23.443 0.10313C23.3665 0.0656247 23.288 0.0351204 23.206 0.018118C23.2035 0.017618 23.202 0.0171179 23.2 0.0166178C23.1145 -0.00038456 23.0275 -0.00288491 22.9404 0.00261586C22.9214 0.00361601 22.9024 0.00561629 22.8834 0.00811664C22.7954 0.0186181 22.7079 0.0371207 22.6244 0.0711255L0.621767 9.07239C0.229211 9.23292 -0.019324 9.62347 0.00117888 10.0465C0.0216818 10.4701 0.306722 10.8346 0.71328 10.9562L10.1986 13.8021L13.044 23.2874C13.1661 23.6935 13.5306 23.9785 13.9537 23.999C13.9702 23.9995 13.9862 24 14.0027 24C14.4067 24 14.7738 23.756 14.9283 23.3784L23.9296 1.37531C23.9296 1.37481 23.9296 1.37481 23.9296 1.37431C23.9631 1.2923 23.9811 1.20679 23.9916 1.12027C23.9941 1.09877 23.9966 1.07777 23.9976 1.05626C24.0026 0.971252 24.0006 0.88574 23.9841 0.801729C23.9831 0.797728 23.9816 0.793727 23.9806 0.789727ZM18.7813 3.80415L10.7172 11.8688L3.99725 9.8525L18.7813 3.80415ZM14.1472 20.0034L12.1314 13.283L20.1951 5.21935L14.1472 20.0034Z"
+                                            fill="white" />
+                                        <path
+                                            d="M8.70845 15.2918C8.31789 14.9013 7.6848 14.9013 7.29425 15.2918L4.79389 17.7922C4.40334 18.1827 4.40334 18.8158 4.79389 19.2064C4.98942 19.4019 5.24496 19.4994 5.50099 19.4994C5.75703 19.4994 6.01257 19.4019 6.20809 19.2064L8.70845 16.706C9.099 16.3155 9.099 15.6824 8.70845 15.2918Z"
+                                            fill="white" />
+                                        <path
+                                            d="M1.70761 18.2062L3.20782 16.706C3.59838 16.3155 3.59838 15.6824 3.20782 15.2918C2.81726 14.9013 2.18417 14.9013 1.79362 15.2918L0.293405 16.792C-0.0971506 17.1826 -0.0971506 17.8157 0.293405 18.2062C0.488933 18.4018 0.744469 18.4993 1.00051 18.4993C1.25654 18.4993 1.51208 18.4018 1.70761 18.2062Z"
+                                            fill="white" />
+                                        <path
+                                            d="M7.29411 20.7926L5.79389 22.2928C5.40334 22.6833 5.40334 23.3164 5.79389 23.707C5.98942 23.9025 6.24496 24 6.50099 24C6.75703 24 7.01257 23.9025 7.20809 23.707L8.70831 22.2067C9.09886 21.8162 9.09886 21.1831 8.70831 20.7926C8.31775 20.402 7.68466 20.402 7.29411 20.7926Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </span>
+                                <span class="navlink-active">submenu2</span>
+                            </a>
+
+                        </li>
+                    </ul>
+                </li>
+
+
+
+            </ul>
+
+
+        </nav>
+
+        <section id="content">
+
+            <div id="content-navbar">
+                <div class="container-fluid">
+                    <div class="bg-light py-3 d-flex">
+
+                        <button type="button" id="sidebarCollapse" class="btn btn-theme-blue navbar-btn">
+                            <i class="fa fa-align-left"></i>
+                            <!-- Shrink Sidebar -->
+                        </button>
+
+                        <a class="crumb h4 text-theme-blue text-uppercase">
+                            Payments
+                        </a>
+
+                        <!-- SEARCH OPTIONS TO OVERRIDE MAIN CRUMB -->
+                        <div class="search-component search-options">
+                            <a class="search-crumb h4 text-theme-blue text-uppercase">
+                                &nbsp;Search Result
+                            </a>
+                            <div class="filter">
+                                <a class="filter-drop dropdown-toggle" id="filter-list" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <span class="f-icon">
+                                        <svg width="18" height="21" viewBox="0 0 18 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 0H18V2H17.92L11 8.92V20.91L7 16.91V8.91L0.0899999 2H0V0Z"
+                                                fill="#209fd9" />
+                                        </svg>
+
+                                    </span>
+                                </a>
+                                <div class="dropdown-menu " aria-labelledby="filter-list">
+                                    <a href="#" class="dropdown-item active">most relevant</a>
+                                    <a href="#" class="dropdown-item">experience</a>
+                                    <a href="#" class="dropdown-item">and wah ever</a>
+                                </div>
+                                <span class="filter-type"></span>
+                            </div>
+
+                        </div>
+                        <!-- END -->
+                    </div>
+                </div>
+                <!-- end container fluid -->
+            </div>
+            <!-- end content navbar -->
+
+
+            <!-- end breadcrumbs -->
+
+
+            <section class="main-content mt-40">
+                <div class="container-fluid">
+                    <div class="wrapper-content">
+
+                        <!-- SEARCH LIST CONTAINER -->
+
+                        <div class=" search-component search-container">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <a class="search-item">
+                                        <img src="../images/a4.jpg" height="60" class="rounded-circle doc-img"
+                                            alt="doctor's image">
+
+                                        <!-- personal detail -->
+                                        <div id="p-d" class="search-cell">
+                                            <span class="name">Dr. Viola Davis</span>
+                                            <span class="speciality">Gynaecologist</span>
+                                        </div>
+
+                                        <!-- work detail -->
+                                        <div id="w-d" class="search-cell">
+                                            <span class="name">Giltolee Aris Hospital</span>
+                                            <span class="fee">Appt. fee - <strong>$40</strong> </span>
+                                        </div>
+                                        <!-- schedule detail -->
+                                        <div id="s-d" class="search-cell">
+                                            <ul class="nav flex-sm-row">
+                                                <li class="nav-item has">S</li>
+                                                <li class="nav-item ">M</li>
+                                                <li class="nav-item">T</li>
+                                                <li class="nav-item has">W</li>
+                                                <li class="nav-item">T</li>
+                                                <li class="nav-item has">F</li>
+                                                <li class="nav-item">S</li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- ratings -->
+                                        <span class="ratings" class="search-cell">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                    </a>
+                                    <a class="search-item">
+                                        <img src="../images/a3.jpg" height="60" class="rounded-circle doc-img"
+                                            alt="doctor's image">
+
+                                        <!-- personal detail -->
+                                        <div id="p-d" class="search-cell">
+                                            <span class="name">Dr. Wade Mane</span>
+                                            <span class="speciality">Dentist</span>
+                                        </div>
+
+                                        <!-- work detail -->
+                                        <div id="w-d" class="search-cell">
+                                            <span class="name"> Aris Specialist Hospital</span>
+                                            <span class="fee">Appt. fee - <strong>$40</strong> </span>
+                                        </div>
+                                        <!-- schedule detail -->
+                                        <div id="s-d" class="search-cell">
+                                            <ul class="nav flex-sm-row">
+                                                <li class="nav-item has">S</li>
+                                                <li class="nav-item has">M</li>
+                                                <li class="nav-item">T</li>
+                                                <li class="nav-item ">W</li>
+                                                <li class="nav-item">T</li>
+                                                <li class="nav-item has">F</li>
+                                                <li class="nav-item">S</li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- ratings -->
+                                        <span class="ratings" class="search-cell">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-md-3"></div>
+                            </div>
+                        </div>
+                        <!-- END -->
+
+
+                        <div class="content ">
+                            <div class="row">
+                                
+                                <div class="col-md-4">
+                                    <div class="card transaction-menu " >
+                                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <a class="nav-link active" id="v-pills-pay-method-tab" data-toggle="pill" href="#v-pills-pay-method" role="tab"
+                                                    aria-controls="v-pills-home" aria-selected="true">Payment Method</a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a class="nav-link " id="v-pills-pay-history-tab" data-toggle="pill" href="#v-pills-pay-history" role="tab"
+                                                    aria-controls="v-pills-home" aria-selected="false">Payment History</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-8">
+                                    <div class="tab-content" id="v-pills-tabContent">
+                                        <div class="tab-pane fade show active" id="v-pills-pay-method" role="tabpanel" aria-labelledby="v-pills-pay-method-tab">
+                                           <div class="transaction-body card p-4">
+                                                <h5 class="card-title">Payment Method</h5>
+
+                                                <div class="paycard">
+                                                    <div class="paycard-detail">
+                                                        <svg width="105" height="34" viewBox="0 0 105 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M18.5938 22.5603L21.0939 8.58228H25.0003L22.5783 22.5603H18.5938Z" fill="#3C58BF" />
+                                                            <path d="M18.5938 22.5603L21.797 8.58228H25.0003L22.5783 22.5603H18.5938Z" fill="#293688" />
+                                                            <path
+                                                                d="M36.6507 8.63759C35.8513 8.3188 34.5723 8 32.9735 8C28.9765 8 26.0987 9.99248 26.0987 12.8617C26.0987 15.0135 28.0971 16.1293 29.6959 16.8466C31.2947 17.5639 31.7744 18.0421 31.7744 18.6797C31.7744 19.6361 30.4953 20.1143 29.3762 20.1143C27.7774 20.1143 26.8981 19.8752 25.5391 19.3173L24.9795 19.0782L24.4199 22.3459C25.3792 22.7444 27.1379 23.1429 28.9765 23.1429C33.2133 23.1429 36.0112 21.1504 36.0112 18.1218C36.0112 16.4481 34.972 15.1729 32.5738 14.1368C31.1349 13.4195 30.2555 13.0211 30.2555 12.3038C30.2555 11.6662 30.975 11.0286 32.5738 11.0286C33.9327 11.0286 34.892 11.2677 35.6115 11.5865L36.0112 11.7459L36.6507 8.63759Z"
+                                                                fill="#3C58BF" />
+                                                            <path
+                                                                d="M36.6507 8.63759C35.8513 8.3188 34.5723 8 32.9735 8C28.9765 8 26.8181 9.99248 26.8181 12.8617C26.8181 15.0135 28.0971 16.1293 29.6959 16.8466C31.2947 17.5639 31.7744 18.0421 31.7744 18.6797C31.7744 19.6361 30.4953 20.1143 29.3762 20.1143C27.7774 20.1143 26.8981 19.8752 25.5391 19.3173L24.9795 19.0782L24.4199 22.3459C25.3792 22.7444 27.1379 23.1429 28.9765 23.1429C33.2133 23.1429 36.0112 21.1504 36.0112 18.1218C36.0112 16.4481 34.972 15.1729 32.5738 14.1368C31.1349 13.4195 30.2555 13.0211 30.2555 12.3038C30.2555 11.6662 30.975 11.0286 32.5738 11.0286C33.9327 11.0286 34.892 11.2677 35.6115 11.5865L36.0112 11.7459L36.6507 8.63759Z"
+                                                                fill="#293688" />
+                                                            <path
+                                                                d="M43.2414 8.58228C42.3198 8.58228 41.6286 8.65993 41.2445 9.5918L35.4844 22.5603H39.6317L40.3997 20.2306H45.3151L45.7759 22.5603H49.4624L46.2367 8.58228H43.2414ZM41.475 17.901C41.7054 17.2021 43.011 13.7852 43.011 13.7852C43.011 13.7852 43.3182 12.931 43.5486 12.3874L43.779 13.7076C43.779 13.7076 44.547 17.2021 44.7007 17.9786H41.475V17.901Z"
+                                                                fill="#3C58BF" />
+                                                            <path
+                                                                d="M44.163 8.58228C43.2414 8.58228 42.5502 8.65993 42.1662 9.5918L35.4844 22.5603H39.6317L40.3997 20.2306H45.3151L45.7759 22.5603H49.4624L46.2367 8.58228H44.163ZM41.475 17.901C41.7822 17.1244 43.011 13.7852 43.011 13.7852C43.011 13.7852 43.3182 12.931 43.5486 12.3874L43.779 13.7076C43.779 13.7076 44.547 17.2021 44.7007 17.9786H41.475V17.901Z"
+                                                                fill="#293688" />
+                                                            <path
+                                                                d="M11.6054 18.2892L11.2171 16.2702C10.5182 13.9405 8.26623 11.3779 5.78125 10.1354L9.27575 22.5603H13.4692L19.7593 8.58228H15.5659L11.6054 18.2892Z"
+                                                                fill="#3C58BF" />
+                                                            <path
+                                                                d="M11.6054 18.2892L11.2171 16.2702C10.5182 13.9405 8.26623 11.3779 5.78125 10.1354L9.27575 22.5603H13.4692L19.7593 8.58228H16.3424L11.6054 18.2892Z"
+                                                                fill="#293688" />
+                                                            <path
+                                                                d="M0.539062 6.58228L1.24318 6.7337C6.25023 7.86942 9.69258 10.7466 11.0226 14.1537L9.61435 7.71799C9.37964 6.80942 8.67552 6.58228 7.81494 6.58228H0.539062Z"
+                                                                fill="#FFBC00" />
+                                                            <path
+                                                                d="M0.539062 6.58228C5.54612 7.72946 9.69258 10.7121 11.0226 14.1537L9.69258 8.72369C9.45788 7.80594 8.67552 7.27059 7.81494 7.27059L0.539062 6.58228Z"
+                                                                fill="#F7981D" />
+                                                            <path
+                                                                d="M0.539062 6.58228C5.54612 7.72946 9.69258 10.7121 11.0226 14.1537L10.0838 11.171C9.84905 10.2533 9.53611 9.33552 8.44082 8.95313L0.539062 6.58228Z"
+                                                                fill="#ED7C00" />
+                                                            <path
+                                                                d="M15.2171 17.964L12.5769 15.3237L11.3344 18.2746L11.0238 16.3333C10.3249 14.0036 8.07286 11.441 5.58789 10.1985L9.08238 22.6233H13.2758L15.2171 17.964Z"
+                                                                fill="#051244" />
+                                                            <path d="M22.4389 22.6234L19.0998 19.2065L18.4785 22.6234H22.4389Z" fill="#051244" />
+                                                            <path
+                                                                d="M31.3673 17.8087C31.678 18.1193 31.8333 18.3523 31.7556 18.6629C31.7556 19.5948 30.5131 20.0607 29.426 20.0607C27.8729 20.0607 27.0186 19.8278 25.6985 19.2842L25.1549 19.0512L24.6113 22.2351C25.5432 22.6233 27.2516 23.0116 29.0377 23.0116C31.5227 23.0116 33.5417 22.3127 34.7065 21.0702L31.3673 17.8087Z"
+                                                                fill="#051244" />
+                                                            <path
+                                                                d="M35.873 22.6234H39.5228L40.2994 20.2937H45.2693L45.7353 22.6234H49.4627L48.1426 16.9546L43.4833 12.4506L43.7162 13.693C43.7162 13.693 44.4928 17.1875 44.6481 17.9641H41.3866C41.6972 17.1875 42.9397 13.8484 42.9397 13.8484C42.9397 13.8484 43.2503 12.9941 43.4833 12.4506"
+                                                                fill="#051244" />
+                                                            <path
+                                                                d="M76.6433 25.2867C83.626 25.2867 89.2867 19.626 89.2867 12.6433C89.2867 5.66061 83.626 0 76.6433 0C69.6606 0 64 5.66061 64 12.6433C64 19.626 69.6606 25.2867 76.6433 25.2867Z"
+                                                                fill="#EE0005" />
+                                                            <path
+                                                                d="M92.3523 25.2867C99.335 25.2867 104.996 19.626 104.996 12.6433C104.996 5.66061 99.335 0 92.3523 0C85.3696 0 79.709 5.66061 79.709 12.6433C79.709 19.626 85.3696 25.2867 92.3523 25.2867Z"
+                                                                fill="#F9A000" />
+                                                            <path
+                                                                d="M79.709 12.6431C79.709 16.6576 81.5804 20.2347 84.498 22.5507C87.4156 20.2346 89.2871 16.6576 89.2871 12.6431C89.2871 8.62857 87.4157 5.05144 84.498 2.73547C81.5805 5.05163 79.709 8.62867 79.709 12.6431Z"
+                                                                fill="#FF6300" />
+                                                            <path
+                                                                d="M68.9918 29.0797C68.4682 29.0797 67.9446 29.368 67.6293 29.9818C67.4211 29.4492 66.9875 29.0797 66.4459 29.0797C65.8412 29.0797 65.4438 29.413 65.2456 29.7655V29.4402C65.2456 29.2599 65.0473 29.1338 64.8211 29.1338C64.5418 29.1338 64.3516 29.26 64.3516 29.4402V30.9438C64.6539 31.3783 64.9702 31.8028 65.2996 32.2163V30.8578C65.2996 30.2441 65.7151 29.9187 66.1396 29.9187C66.5821 29.9187 66.9785 30.2891 66.9785 30.8488V33.1063C66.9785 33.3225 67.2319 33.4126 67.4481 33.4126C67.6924 33.4126 67.9267 33.3225 67.9267 33.1063V30.8398C67.9267 30.2531 68.3511 29.9097 68.7757 29.9097C69.1911 29.9097 69.6157 30.2351 69.6157 30.8578V33.0973C69.6157 33.2505 69.8409 33.4126 70.0852 33.4126C70.3465 33.4126 70.5628 33.2504 70.5628 33.0973V30.8578C70.5626 29.7204 69.8047 29.0797 68.9918 29.0797Z"
+                                                                fill="#171614" />
+                                                            <path
+                                                                d="M72.8839 29.0797C72.2702 29.0797 71.5203 29.332 71.5203 29.6574C71.5203 29.8736 71.6384 30.1359 71.8637 30.1359C72.0439 30.1359 72.2071 29.8646 72.8658 29.8646C73.5245 29.8646 73.7598 30.3792 73.7598 30.8397V31.0019H73.3624C72.1079 31.0019 71.25 31.2732 71.25 32.2933C71.25 33.1063 71.7916 33.4847 72.4503 33.4847C73.064 33.4847 73.4976 33.1513 73.8139 32.7808V33.0972C73.8139 33.2684 74.0032 33.4125 74.2474 33.4125C74.5087 33.4125 74.7079 33.2683 74.7079 33.0972V30.8307C74.7079 29.9276 74.2114 29.0797 72.8839 29.0797ZM73.7599 31.8599C73.7599 32.2933 73.2453 32.7629 72.7938 32.7629C72.4594 32.7629 72.2072 32.5827 72.2072 32.1763C72.2072 31.5986 72.8479 31.5255 73.5337 31.5255H73.7599V31.8599Z"
+                                                                fill="#171614" />
+                                                            <path
+                                                                d="M76.3679 30.3341C76.3679 30.1088 76.5661 29.8104 77.0987 29.8104C77.6053 29.8104 77.8846 30.0728 78.0738 30.0728C78.3 30.0728 78.4352 29.7474 78.4352 29.6122C78.4352 29.3229 77.7584 29.0796 77.0807 29.0796C75.9434 29.0796 75.537 29.7564 75.537 30.3791C75.537 31.8778 77.7135 31.3181 77.7135 32.2662C77.7135 32.5095 77.5413 32.7538 76.9456 32.7538C76.1697 32.7538 75.9796 32.3383 75.7453 32.3383C75.5551 32.3383 75.4199 32.6007 75.4199 32.7628C75.4199 33.1062 76.0797 33.4846 76.9726 33.4846C77.9929 33.4846 78.5615 32.997 78.5615 32.2302C78.5614 30.6054 76.3679 31.129 76.3679 30.3341Z"
+                                                                fill="#171614" />
+                                                            <path
+                                                                d="M81.2087 32.6008H80.8923C80.4228 32.6008 80.2607 32.4376 80.2607 32.0041V29.8377H81.3619C81.5241 29.8377 81.6242 29.6665 81.6242 29.4853C81.6242 29.3051 81.5241 29.1338 81.3619 29.1338H80.2607V27.481C80.2607 27.3008 80.0163 27.1747 79.7821 27.1747C79.5559 27.1747 79.3125 27.3009 79.3125 27.481V32.0041C79.3125 32.9882 79.8631 33.4127 80.8922 33.4127H81.2086C81.4789 33.4127 81.6141 33.2145 81.6141 33.0063C81.6142 32.799 81.479 32.6008 81.2087 32.6008Z"
+                                                                fill="#171614" />
+                                                            <path
+                                                                d="M85.3506 32.3744C85.1063 32.3744 84.8901 32.7178 84.2494 32.7178C83.5536 32.7178 83.075 32.3384 83.075 31.7337V31.5255H84.9801C85.3866 31.5255 85.8021 31.4985 85.8021 30.7496C85.8021 29.7655 84.9711 29.0797 84.0051 29.0797C82.9668 29.0797 82.127 29.8826 82.127 30.8307V31.6887C82.127 32.7629 82.994 33.4847 84.2224 33.4847C85.1334 33.4847 85.721 33.0692 85.721 32.7988C85.721 32.6367 85.5759 32.3744 85.3506 32.3744ZM83.075 30.6504C83.075 30.1539 83.4995 29.8015 83.996 29.8015C84.5107 29.8015 84.9081 30.1899 84.9081 30.6685C84.9081 30.8847 84.836 30.9387 84.5737 30.9387H83.075V30.6504Z"
+                                                                fill="#171614" />
+                                                            <path
+                                                                d="M88.9 29.0797H88.6106C88.078 29.0797 87.6545 29.4582 87.4643 29.8376V29.4402C87.4643 29.2599 87.2661 29.1338 87.0309 29.1338C86.7606 29.1338 86.5703 29.26 86.5703 29.4402V33.0973C86.5703 33.2505 86.7605 33.4126 87.0309 33.4126C87.3022 33.4126 87.5185 33.2504 87.5185 33.0973V31.2462C87.5185 30.4242 88.0601 29.9187 88.6107 29.9187H88.9001C89.0893 29.9187 89.2615 29.7295 89.2615 29.4943C89.2614 29.2689 89.0892 29.0797 88.9 29.0797Z"
+                                                                fill="#171614" />
+                                                            <path
+                                                                d="M92.5731 32.3474C92.3659 32.3474 92.2217 32.6457 91.6251 32.6457C90.9302 32.6457 90.623 32.2843 90.623 31.6887V30.8757C90.623 30.28 90.9393 29.9186 91.6161 29.9186C92.1948 29.9186 92.3569 30.199 92.5461 30.199C92.7723 30.199 92.9255 29.9186 92.9255 29.7384C92.9255 29.422 92.3659 29.0797 91.5439 29.0797C90.2534 29.0797 89.6758 29.8646 89.6758 30.8757V31.6887C89.6758 32.7179 90.2534 33.4847 91.5529 33.4847C92.3839 33.4847 92.9796 33.1152 92.9796 32.7988C92.9797 32.6097 92.8265 32.3474 92.5731 32.3474Z"
+                                                                fill="#171614" />
+                                                            <path
+                                                                d="M95.0304 29.0797C94.4167 29.0797 93.6668 29.332 93.6668 29.6574C93.6668 29.8736 93.7849 30.1359 94.0102 30.1359C94.1913 30.1359 94.3536 29.8646 95.0123 29.8646C95.671 29.8646 95.9063 30.3792 95.9063 30.8397V31.0019H95.5089C94.2544 31.0019 93.3965 31.2732 93.3965 32.2933C93.3965 33.1063 93.9381 33.4847 94.5968 33.4847C95.2115 33.4847 95.644 33.1513 95.9604 32.7808V33.0972C95.9604 33.2684 96.1496 33.4125 96.3939 33.4125C96.6551 33.4125 96.8544 33.2683 96.8544 33.0972V30.8307C96.8544 29.9276 96.3578 29.0797 95.0304 29.0797ZM95.9064 31.8599C95.9064 32.2933 95.3918 32.7629 94.9403 32.7629C94.6059 32.7629 94.3536 32.5827 94.3536 32.1763C94.3536 31.5986 94.9943 31.5255 95.6802 31.5255H95.9064V31.8599Z"
+                                                                fill="#171614" />
+                                                            <path
+                                                                d="M100.147 29.0797H99.8587C99.3261 29.0797 98.9016 29.4582 98.7124 29.8376V29.4402C98.7124 29.2599 98.5132 29.1338 98.2789 29.1338C98.0076 29.1338 97.8184 29.26 97.8184 29.4402V33.0973C97.8184 33.2505 98.0076 33.4126 98.2789 33.4126C98.5492 33.4126 98.7665 33.2504 98.7665 33.0973V31.2462C98.7665 30.4242 99.3081 29.9187 99.8588 29.9187H100.147C100.337 29.9187 100.508 29.7295 100.508 29.4943C100.508 29.2689 100.337 29.0797 100.147 29.0797Z"
+                                                                fill="#171614" />
+                                                            <path
+                                                                d="M104.174 26.5879C103.904 26.5879 103.695 26.7141 103.695 26.8942V29.7655C103.497 29.4131 103.091 29.0797 102.522 29.0797C101.637 29.0797 100.906 29.8826 100.906 30.8576V31.6886C100.906 32.6277 101.646 33.4846 102.495 33.4846C102.537 33.4846 102.578 33.4826 102.619 33.4786C103.348 32.6807 104.025 31.8337 104.644 30.9447V26.8943C104.644 26.7141 104.445 26.5879 104.174 26.5879ZM103.696 31.896C103.696 32.1132 103.29 32.6458 102.765 32.6458C102.269 32.6458 101.854 32.1762 101.854 31.6887V30.8577C101.854 30.3882 102.269 29.9187 102.775 29.9187C103.226 29.9187 103.696 30.2711 103.696 30.8577V31.896Z"
+                                                                fill="#171614" />
+                                                        </svg>
+
+                                                    </div>
+                                                    <div class="paycard-detail">
+                                                        <p class="paycard-detail--title">Card Number</p>
+                                                        <p class="paycard-detail--info">53610600XXXXXXXXX</p>
+                                                    </div>
+                                                    <div class="paycard-detail">
+                                                        <p class="paycard-detail--title">Expiration Date</p>
+                                                        <p class="paycard-detail--info">01/2022</p>
+                                                    </div>
+                                                </div>
+
+                                                <a href="#" class="btn btn-primary">Change Payment Method</a>
+                                                
+                                           </div>
+                                        </div>
+                                        <div class="tab-pane fade " id="v-pills-pay-history" role="tabpanel" aria-labelledby="v-pills-pay-history-tab">
+                                            <div class="transaction-body">
+                                                <div class="table-responsive-md transaction-table">
+                                                    <table class="table table-borderless">
+                                                        <thead >
+                                                            <tr>
+                                                                <th scope="col">Appointment type</th>
+                                                                <th scope="col">Appoitment Duration</th>
+                                                                <th scope="col">Cost</th>
+                                                                <th scope="col">Paid to</th>
+                                                                <th scope="col">Date</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                
+                                                                <td>Consultation</td>
+                                                                <td>30mins</td>
+                                                                <td>$75</td>
+                                                                <td>Dr. Milinda Parker</td>
+                                                                <td>12/01/2019</td>
+                                                            </tr>
+                                                            <tr>
+                                                                
+                                                                <td>Consultation</td>
+                                                                <td>30mins</td>
+                                                                <td>$75</td>
+                                                                <td>Dr. Milinda Parker</td>
+                                                                <td>12/01/2019</td>
+                                                            </tr>
+                                                            <tr>
+                                                                
+                                                                <td>Consultation</td>
+                                                                <td>30mins</td>
+                                                                <td>$75</td>
+                                                                <td>Dr. Milinda Parker</td>
+                                                                <td>12/01/2019</td>
+                                                            </tr>
+                                                            <tr>
+                                                                
+                                                                <td>Consultation</td>
+                                                                <td>30mins</td>
+                                                                <td>$75</td>
+                                                                <td>Dr. Milinda Parker</td>
+                                                                <td>12/01/2019</td>
+                                                            </tr>
+                                                            
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+
+                            
+
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- end main content -->
+
+            <div class="content-footer">
+                <div class="float-right">some text here</div>
+                <div>made with love form redehub</div>
+            </div>
+            <!-- end footer -->
+        </section>
+
+        <div class="search-component search-select-display sidebar-right bg-theme-gradient">
+            <div class="display-wrapper">
+                <div class="user-img text-center">
+                    <img src="" class="rounded " alt="Doctor's image">
+
+                </div>
+                <div class="details">
+                    <span class="name"></span>
+                    <span class="speciality small"></span>
+                </div>
+
+                <div class="actions ">
+
+                    <a href="#" class="btn  py-2 btn-block text-center " id="profile-view" data-toggle="modal"
+                        data-target="#profileModal">view profile</a>
+                    <a href="request.html" class="btn  py-2 btn-block text-center " id="appointment-req">request
+                        appointment</a>
+                </div>
+
+
+            </div>
+        </div>
+
+
+      
+
+
+        <!-- profile modal -->
+        <div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-body p-0">
+                        <div class="profile-container">
+                            <div class="profile-img">
+                                <img src="" alt="profile image" class="img-fluid">
+                            </div>
+                            <div class="profile-details bg-theme-gradient">
+                                <div class="fee-wrap">
+                                    <div class="p-1 text-center">FEE</div>
+                                    <span class="fee p-1"></span>
+                                </div>
+                                <div class="p-4">
+                                    <div class="category">
+                                        <span class="cat-title">PROFILE</span>
+                                        <span class="name font-weight-bold"></span>
+                                        <span class="degree">MBBS</span>
+                                        <span class="office-name"></span>
+                                        <span class="country">Romania</span>
+                                    </div>
+                                    <div class="category">
+                                        <span class="cat-title">speciality</span>
+                                        <div class="row mb-3 mt-2">
+                                            <div class="col-md-6">
+                                                <a href="#" class="d-block p-2 rounded-pill spec">Cardiology</a
+                                                    href="#">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a href="#" class="d-block p-2 rounded-pill spec">Gynecology</a
+                                                    href="#">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <a href="#" class="d-block p-2 rounded-pill spec">Dermatology</a
+                                                    href="#">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a href="#" class="d-block p-2 rounded-pill spec">Periodontology</a
+                                                    href="#">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <span class="cat-title">experience</span>
+                                        <span>25+ Years</span>
+                                    </div>
+                                    <div class="category">
+                                        <span class="cat-title">CONTACT</span>
+                                        <span>+57 87 576 2226</span>
+                                    </div>
+                                    <div class="category">
+                                        <span class="cat-title">ADDRESS</span>
+                                        <span>Strada Florilor Nr.1, Bl.2, Sc.3, Et.4, Ap.5, Ploiesti, Prahova,
+                                            Romania</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- end wrapper -->
+
+    <!-- Optional JavaScript -->
+    <!-- jquery script -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+
+    <!-- popper js -->
+    <script src="../js/popper.min.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!-- Main js -->
+    <script src="../js/main.js"></script>
+
+
+</body>
+
+</html>
