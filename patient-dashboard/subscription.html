@@ -1,31 +1,37 @@
-<!doctype html>
+
 <html lang="en">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="../images/favicon.png" type="image/png">
 
-    
+
     <!-- BOOTSTRAP STYLE -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    
+
+    <!-- FULLCALENDAR STYLE -->
+    <link rel="stylesheet" href="../css/fullcalendar.min.css">
+
+
+
     <!-- MAIN STYLE -->
     <link rel="stylesheet" href="../css/style.css">
 
     <!-- DASHBOARD STYLE -->
     <link rel="stylesheet" href="../css/dashboard.css">
-    
+
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
         crossorigin="anonymous">
 
 
-    
 
-    <title>Axya - Edit Profile</title>
+
+    <title>Axya - Dashboard</title>
 </head>
 
 <body>
@@ -34,15 +40,30 @@
         <div class="trans-box">
             <nav class="navbar navbar-expand-lg main-nav ">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="../images/axya-logo.png"  height="47" alt="axya logo">
+                    <a class="navbar-brand" href="#">
+                        <img src="../images/axya-logo.png" height="47" alt="axya logo">
                     </a>
-                   
-            
+                    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <svg width="35" height="20" viewBox="0 0 40 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0H40V4H0V0Z" fill="white" />
+                                <path d="M0.5 10.5H35.5V14.5H0.5V10.5Z" fill="white" />
+                                <path d="M0 21H40V25H0V21Z" fill="white" />
+                            </svg>
+                            <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.9998 15.3333C25.1082 15.3333 26.8332 13.6083 26.8332 11.5C26.8332 9.39163 25.1082 7.66663 22.9998 7.66663C20.8915 7.66663 19.1665 9.39163 19.1665 11.5C19.1665 13.6083 20.8915 15.3333 22.9998 15.3333ZM22.9998 19.1666C20.8915 19.1666 19.1665 20.8916 19.1665 23C19.1665 25.1083 20.8915 26.8333 22.9998 26.8333C25.1082 26.8333 26.8332 25.1083 26.8332 23C26.8332 20.8916 25.1082 19.1666 22.9998 19.1666ZM22.9998 30.6666C20.8915 30.6666 19.1665 32.3916 19.1665 34.5C19.1665 36.6083 20.8915 38.3333 22.9998 38.3333C25.1082 38.3333 26.8332 36.6083 26.8332 34.5C26.8332 32.3916 25.1082 30.6666 22.9998 30.6666Z"
+                                    fill="white" />
+                            </svg>
+
+
+                        </span>
+                    </button> -->
+
                     <div class=" dashboard-navbar" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto xs-nav  align-items-center">
                             <li class="nav-item active">
-                                <a class="nav-link" href="../index.html">Home
+                                <a class="nav-link" href="#">Home
                                     <span class="sr-only">(current)</span>
                                 </a>
                             </li>
@@ -50,7 +71,7 @@
                                 <a class="nav-link" href="#">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">FAQs</a>
+                 
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Contact Us</a>
@@ -58,10 +79,12 @@
                         </ul>
 
                         <form class="form-inline">
-                            <input class="form-control mr-sm-2 m-0 border-0 rounded search-form" type="search" placeholder="Search..." aria-label="Search">
-                            
+                            <input class="form-control mr-sm-2 m-0 border-0 rounded search-form" type="search"
+                                placeholder="Search..." aria-label="Search">
+
                         </form>
-                        <a  class="buttom-nav-toggler text-white ml-2" data-toggle="collapse" href="#extra-buttom-nav" role="button" aria-expanded="false" aria-controls="extra-buttom-nav">
+                        <a class="buttom-nav-toggler text-white ml-2" data-toggle="collapse" href="#extra-buttom-nav"
+                            role="button" aria-expanded="false" aria-controls="extra-buttom-nav">
                             <!-- <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M22.9998 15.3333C25.1082 15.3333 26.8332 13.6083 26.8332 11.5C26.8332 9.39163 25.1082 7.66663 22.9998 7.66663C20.8915 7.66663 19.1665 9.39163 19.1665 11.5C19.1665 13.6083 20.8915 15.3333 22.9998 15.3333ZM22.9998 19.1666C20.8915 19.1666 19.1665 20.8916 19.1665 23C19.1665 25.1083 20.8915 26.8333 22.9998 26.8333C25.1082 26.8333 26.8332 25.1083 26.8332 23C26.8332 20.8916 25.1082 19.1666 22.9998 19.1666ZM22.9998 30.6666C20.8915 30.6666 19.1665 32.3916 19.1665 34.5C19.1665 36.6083 20.8915 38.3333 22.9998 38.3333C25.1082 38.3333 26.8332 36.6083 26.8332 34.5C26.8332 32.3916 25.1082 30.6666 22.9998 30.6666Z"
                                     fill="white" />
@@ -69,7 +92,7 @@
                             <i class="fas fa-bars fa-2x"></i>
                         </a>
                         <ul id="extra-buttom-nav" class=" navbar-nav align-items-center  ">
-            
+
                             <li class="nav-item">
                                 <a class="nav-link mr-1 text-white" href="#"><i class="fas fa-cog fa-2x"></i></a>
                             </li>
@@ -78,21 +101,22 @@
                                 <span class="notification-count">1</span>
                             </li>
                             <li class="nav-item nav-avatar ml-3">
-                                <img src="../images/a1.jpg"  height="55" alt="user avatar" class="rounded-circle">
+                                <img src="../images/a1.jpg" height="55" alt="user avatar" class="rounded-circle">
                             </li>
                             <li class="nav-item nav-opt">
-                                <a class="nav-link ml-2 text-white "  data-toggle="collapse" href="#optDropdown" role="button" aria-expanded="false" aria-controls="optDropdown">
+                                <a class="nav-link ml-2 text-white " data-toggle="collapse" href="#optDropdown" role="button"
+                                    aria-expanded="false" aria-controls="optDropdown">
                                     <i class="fas fa-ellipsis-v fa-2x"></i>
                                 </a>
                                 <div class="collapse opt-menu shadow-lg" id="optDropdown">
                                     <div class="opt-items">
                                         <div class="extra-opt-items">
                                             <a href="#" class="opt-item">Home</a>
-                                           
+
                                         </div>
                                         <a href="#" class="opt-item">Dashboard</a>
                                         <a href="#" class="opt-item">Profile</a>
-                                       
+
                                         <a href="#" class="opt-item">Account</a>
                                         <a href="#" class="opt-item">Payment Option</a>
                                         <a href="#" class="opt-item">Help</a>
@@ -101,9 +125,9 @@
                                 </div>
                             </li>
                         </ul>
-            
+
                     </div>
-            
+
                 </div>
             </nav>
         </div>
@@ -116,7 +140,7 @@
             <!-- Sidebar Header -->
             <div class="sidebar-header ">
                 <div class="avatar">
-                    <img src="../images/a1.jpg" height="50" class="rounded-circle" alt=""> 
+                    <img src="../images/a1.jpg" height="50" class="rounded-circle" alt="">
                     <span class="online-status online mx-1"></span>John Doe
                 </div>
                 <div class="avatar-mini">
@@ -129,7 +153,7 @@
 
             <ul class="nav flex-sm-column">
 
-                
+
 
                 <li class="nav-item">
                     <a class="nav-link" href="#">
@@ -155,10 +179,10 @@
                     </a>
                 </li>
 
-           
+
 
                 <li class="nav-item">
-                
+
                     <a class="nav-link" href="#">
                         <span class="icon">
                             <svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -177,7 +201,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    
+
                     <a class="nav-link" href="message.html">
                         <span class="icon">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -196,7 +220,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                
+
                     <a class="nav-link" data-toggle="collapse" href="#testSubmenu" role="button" aria-expanded="false" aria-controls="testSubmenu">
                         <span class="icon">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -209,7 +233,7 @@
                                 <path d="M7.29411 20.7926L5.79389 22.2928C5.40334 22.6833 5.40334 23.3164 5.79389 23.707C5.98942 23.9025 6.24496 24 6.50099 24C6.75703 24 7.01257 23.9025 7.20809 23.707L8.70831 22.2067C9.09886 21.8162 9.09886 21.1831 8.70831 20.7926C8.31775 20.402 7.68466 20.402 7.29411 20.7926Z"
                                     fill="white" />
                             </svg>
-                
+
                         </span>
                         <span class="navlink-active">menu level</span>
                     </a>
@@ -227,11 +251,11 @@
                                         <path d="M7.29411 20.7926L5.79389 22.2928C5.40334 22.6833 5.40334 23.3164 5.79389 23.707C5.98942 23.9025 6.24496 24 6.50099 24C6.75703 24 7.01257 23.9025 7.20809 23.707L8.70831 22.2067C9.09886 21.8162 9.09886 21.1831 8.70831 20.7926C8.31775 20.402 7.68466 20.402 7.29411 20.7926Z"
                                             fill="white" />
                                     </svg>
-                
+                                
                                 </span>
-                                <span class="navlink-active">submenu1</span>
+                               <span class="navlink-active">submenu1</span>
                             </a>
-                
+                            
                             <a href="#" class="nav-link">
                                 <span class="icon">
                                     <svg width="10" height="10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -244,49 +268,50 @@
                                         <path d="M7.29411 20.7926L5.79389 22.2928C5.40334 22.6833 5.40334 23.3164 5.79389 23.707C5.98942 23.9025 6.24496 24 6.50099 24C6.75703 24 7.01257 23.9025 7.20809 23.707L8.70831 22.2067C9.09886 21.8162 9.09886 21.1831 8.70831 20.7926C8.31775 20.402 7.68466 20.402 7.29411 20.7926Z"
                                             fill="white" />
                                     </svg>
-                
+                                
                                 </span>
-                                <span class="navlink-active">submenu2</span>
+                               <span class="navlink-active">submenu2</span>
                             </a>
-                
+                            
                         </li>
                     </ul>
                 </li>
-             
 
-             
+
+
             </ul>
 
 
         </nav>
 
         <section id="content">
-            
+
             <div id="content-navbar">
                 <div class="container-fluid">
                     <div class="bg-light py-3 d-flex">
-                
+
                         <button type="button" id="sidebarCollapse" class="btn btn-theme-blue navbar-btn">
                             <i class="fa fa-align-left"></i>
                             <!-- Shrink Sidebar -->
                         </button>
-                
+
                         <a class="crumb h4 text-theme-blue text-uppercase">
-                            Edit Profile
+                            my Appointments
                         </a>
 
                         <!-- SEARCH OPTIONS TO OVERRIDE MAIN CRUMB -->
                         <div class="search-component search-options">
-                            <a class="search-crumb h4 text-theme-blue text-uppercase" >
+                            <a class="search-crumb h4 text-theme-blue text-uppercase">
                                 &nbsp;Search Result
                             </a>
                             <div class="filter">
-                                <a class="filter-drop dropdown-toggle" id="filter-list" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="filter-drop dropdown-toggle" id="filter-list" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
                                     <span class="f-icon">
                                         <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M0 0H18V2H17.92L11 8.92V20.91L7 16.91V8.91L0.0899999 2H0V0Z" fill="#209fd9" />
                                         </svg>
-
+                        
                                     </span>
                                 </a>
                                 <div class="dropdown-menu " aria-labelledby="filter-list">
@@ -296,37 +321,38 @@
                                 </div>
                                 <span class="filter-type"></span>
                             </div>
-
+                        
                         </div>
                         <!-- END -->
+
                     </div>
                 </div>
                 <!-- end container fluid -->
             </div>
             <!-- end content navbar -->
 
-         
+
             <!-- end breadcrumbs -->
-            
+
 
             <section class="main-content mt-40">
                 <div class="container-fluid">
                     <div class="wrapper-content">
 
                         <!-- SEARCH LIST CONTAINER -->
-
+                        
                         <div class=" search-component search-container">
                             <div class="row">
                                 <div class="col-md-9">
                                     <a class="search-item">
                                         <img src="../images/a4.jpg" height="60" class="rounded-circle doc-img" alt="doctor's image">
-
+                        
                                         <!-- personal detail -->
                                         <div id="p-d" class="search-cell">
                                             <span class="name">Dr. Viola Davis</span>
                                             <span class="speciality">Gynaecologist</span>
                                         </div>
-
+                        
                                         <!-- work detail -->
                                         <div id="w-d" class="search-cell">
                                             <span class="name">Giltolee Aris Hospital</span>
@@ -344,7 +370,7 @@
                                                 <li class="nav-item">S</li>
                                             </ul>
                                         </div>
-
+                        
                                         <!-- ratings -->
                                         <span class="ratings" class="search-cell">
                                             <i class="fas fa-star"></i>
@@ -355,14 +381,14 @@
                                         </span>
                                     </a>
                                     <a class="search-item">
-                                        <img src="../images/a3.jpg" height="60" class="rounded-circle doc-img" alt="doctor's image">
-
+                                        <img src="../images/doc-m.jpg" height="60" class="rounded-circle doc-img" alt="doctor's image">
+                        
                                         <!-- personal detail -->
                                         <div id="p-d" class="search-cell">
                                             <span class="name">Dr. Wade Mane</span>
                                             <span class="speciality">Dentist</span>
                                         </div>
-
+                        
                                         <!-- work detail -->
                                         <div id="w-d" class="search-cell">
                                             <span class="name"> Aris Specialist Hospital</span>
@@ -380,7 +406,7 @@
                                                 <li class="nav-item">S</li>
                                             </ul>
                                         </div>
-
+                        
                                         <!-- ratings -->
                                         <span class="ratings" class="search-cell">
                                             <i class="fas fa-star"></i>
@@ -397,206 +423,25 @@
                         <!-- END -->
 
 
-                            <div class="content">
-                                <!-- Profile Edit -->
-                                
-                                    <div class="row">
-                                        
-                                        <div class="col-md-4">
-                                            <div class="p-img text-center">
-                                                
-                                                <img src="../images/a6.jpg" alt="profile image"  class="rounded" height="250">
-                                                <!-- <div class="text-center py-3">
-                                                    <a href="#" class="text-theme-blue">View my profile</a>
-                                                </div> -->
-                                            </div>
-                                        </div>
-                                        
-                                    
-                                        <div class="col-md-7">
-                                            <div class="profile-view profile-view--self">
-                                               
-                                                <form action="#" method="post">
-
-                                                    <!-- FORM CATEGORY  HERE-->
-                                                    
-                                                    <div class="form-category">
-                                                        <h4 class="form-category-title">Log in</h4>
-
-                                                        <div class="form-group row">
-                                                            <label for="email" class="col-sm-3 col-form-label text-right">Your Email</label>
-                                                            <div class="col-sm-9">
-                                                                <input type="email" class="form-control" name="email" id="email" placeholder="email" value="johndoe@gmail.com" >
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <label for="password" class="col-sm-3 col-form-label text-right">Your Password</label>
-                                                            <div class="col-sm-9">
-                                                                <input type="password" class="form-control" name="password" id="password" placeholder="password" value="password" >
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <!-- FORM CATEGORY  HERE CONTACT INFO-->
-
-                                                    <div class="form-category">
-                                                        <h4 class="form-category-title">Contact Infomation</h4>
-
-                                                        <div class="form-group row">
-                                                            <label for="tel" class="col-sm-3 col-form-label text-right">Phone</label>
-                                                            <div class="col-sm-9">
-                                                                <input type="tel" class="form-control" name="tel" id="tel" placeholder="tel" value="+40 345 345 345" >
-                                                            </div>
-                                                        </div>
-                                                        
-                                                        <div class="form-group row">
-                                                            <label for="home-address" class="col-sm-3 col-form-label text-right">Home Address</label>
-                                                            <div class="col-sm-9">
-                                                                <input type="text" class="form-control" name="home-address" id="home-address" placeholder="your home address" value="" >
-                                                            </div>
-                                                        </div>
-                                                        
-                                                    </div>
-
-                                                    <!-- FORM CATEGORY  HERE BASIC INFO-->
-
-                                                    <div class="form-category">
-                                                        <h4 class="form-category-title">Basic Infomation</h4>
-
-                                                        <div class="row">
-
-                                                            <div class="col-md-6">
-                                                                <div class="form-group row">
-                                                                    <label for="fname" class="col-sm-3 col-form-label text-right">firstname</label>
-                                                                    <div class="col-sm-9">
-                                                                        <input type="text" class="form-control" name="fname" id="fname" placeholder="fname" value="John" >
-                                                                    </div>
-                                                                </div>
-                                                                
-                                                                <div class="form-group row">
-                                                                    <label for="lname" class="col-sm-3 col-form-label text-right">lastname</label>
-                                                                    <div class="col-sm-9">
-                                                                        <input type="text" class="form-control" name="lname" id="lname" placeholder="last name" value="Doe" >
-                                                                    </div>
-                                                                </div>
-                                                                
-                                                                
-                                                                <div class="form-group row">
-                                                                    <label for="language" class="col-sm-3 col-form-label text-right">language</label>
-                                                                    <div class="col-sm-9">
-                                                                        <input type="text" class="form-control" name="language" id="language" placeholder="last name" value="Doe" >
-                                                                    </div>
-                                                                </div>
-                                                                
-                                                            </div>
-
-                                                            <div class="col-md-6">
-
-                                                                <div class="form-group row">
-                                                                    <label for="gender" class="col-sm-3 col-form-label text-right">Gender</label>
-                                                                    <div class="col-sm-9">
-                                                                        <select class="form-control">
-                                                                            <option value="1" selected>male</option>
-                                                                           
-                                                                            <option value="2">female</option>
-                                                                        </select>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="form-group row">
-                                                                    <label for="height" class="col-sm-3 col-form-label text-right">height</label>
-                                                                    <div class="col-sm-9">
-                                                                        <input type="text" class="form-control" name="height" id="height" placeholder="height" value="170cm" >
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-group row">
-                                                                    <label for="weight" class="col-sm-3 col-form-label text-right">weight</label>
-                                                                    <div class="col-sm-9">
-                                                                        <input type="text" class="form-control" name="weight" id="weight" placeholder="weight" value="110lbs" >
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        
-                                                        
-                                                        
-                                                    </div>
-                                                    
-                                                    <div class="form-category">
-
-                                                        <h4 class="form-category-title">Personal Information</h4>
-
-                                                        <div class="form-group row">
-                                                            <label for="bday" class="col-sm-3 col-form-label-text-right">Birthday</label>
-                                                            <div class="col-sm-9">
-                                                                <input type="text" class="form-control" name="bday" id="bday" placeholder="bday" value="20/11/1985" >    
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-category">
-
-                                                        <h4 class="form-category-title">Medical Information</h4>
-
-                                                        <div class="row">
-                                                            <div class="col-sm-6">
-                                                                <div class="form-group row">
-                                                                    <label for="bday" class="col-sm-4 col-form-label-text-right">Allergies</label>
-                                                                    <div class="col-sm-8">
-                                                                        <textarea name="allergies" id="allergies" rows="2" class="form-control"></textarea>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-6">
-                                                                <div class="form-group row">
-                                                                    <label for="bday" class="col-sm-4 col-form-label-text-right">Chronic Condition</label>
-                                                                    <div class="col-sm-8">
-                                                                        <textarea name="allergies" id="allergies" rows="2" class="form-control"></textarea>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-6">
-                                                                <div class="form-group row">
-                                                                    <label for="bday" class="col-sm-4 col-form-label-text-right">Medical Test</label>
-                                                                    <div class="col-sm-8">
-                                                                        <textarea name="allergies" id="allergies" rows="2" class="form-control"></textarea>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-6">
-                                                                <div class="form-group row">
-                                                                    <label for="bday" class="col-sm-4 col-form-label-text-right">Treatments</label>
-                                                                    <div class="col-sm-8">
-                                                                        <textarea name="allergies" id="allergies" rows="2" class="form-control"></textarea>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-
-                                                       
-                                                    </div>
-
-                                                </form>
-                                                
-                                                <div class="p-4 mt-4 text-center">
-                                                    <a href="profile-edit.html" class="btn btn-primary">Save Changes</a>
-                                                    
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> 
-                               
-
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <div id="calendar">
+    
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                </div>
                             </div>
-                        
+
+                        </div>
 
 
-                        
-                        
+
                     </div>
                 </div>
             </section>
-                    
+
             <!-- end main content -->
 
             <div class="content-footer">
@@ -606,44 +451,36 @@
             <!-- end footer -->
         </section>
 
+        <!-- RIGHT SIDEBAR FOR SEARCH -->
         <div class="search-component search-select-display sidebar-right bg-theme-gradient">
             <div class="display-wrapper">
+                  
                 <div class="user-img text-center">
-                    <img src=""  class="rounded "  alt="Doctor's image">
-
+                    <img src="" class="rounded " alt="Doctor's image">
+        
                 </div>
                 <div class="details">
                     <span class="name"></span>
                     <span class="speciality small"></span>
                 </div>
-
+        
                 <div class="actions ">
-
-                    <a href="#" class="btn  py-2 btn-block text-center " id="profile-view" data-toggle="modal" data-target="#profileModal">view profile</a>
+        
+                    <a href="#" class="btn  py-2 btn-block text-center " id="profile-view" data-toggle="modal" data-target="#profileModal">view
+                        profile</a>
                     <a href="request.html" class="btn  py-2 btn-block text-center " id="appointment-req">request appointment</a>
                 </div>
-
-                
+        
+        
             </div>
         </div>
 
-      
-        <!-- RIGHT SIDEBAR TO DISPLAY APPOINTMENT INFORMTION -->
-        <!-- <div id="appointment-display" class=" appointment-dc bg-theme-gradient">
-            <div class="display-wrapper">
-
-           
-            </div>
-        </div> -->
-        <!-- end content -->
-
-
-        <!-- profile modal -->
+        <!--Search profile modal -->
         <div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
-                   
+        
                     <div class="modal-body p-0">
                         <div class="profile-container">
                             <div class="profile-img">
@@ -697,10 +534,67 @@
                             </div>
                         </div>
                     </div>
-                   
+        
                 </div>
             </div>
         </div>
+
+
+
+        <!-- RIGHT SIDEBAR TO DISPLAYINFORMTION -->
+
+        <div id="appointment-display" class=" appointment-dc bg-theme-gradient">
+            <span class="close"> &times; </span>
+
+            <div class="display-wrapper">
+
+                <!-- Type of Appointment indicators -->
+
+                <div class="appointment-legend">
+                    <div class="legend l-upcoming">
+                        <span class="indicator"></span> Upcoming
+                    </div>
+                    <div class="legend l-past">
+                        <span class="indicator"></span> Past
+                    </div>
+                    <div class="legend l-requested">
+                        <span class="indicator"></span> Requested
+                    </div>
+
+                </div>
+                <div class="display-card card shadow-lg">
+                    <div class="card-body">
+                        <div class="appointment-detail">
+
+                            <div class="media">
+                                <img src="../images/a5.jpg" height="50" class="align-self-center mr-3 rounded-circle u-img"
+                                    alt="Doctor image">
+                                <div class="media-body">
+                                    <h5 class="m-0 py-3 text-darker font-weight-bold u-name">Dr. Bogdana Madalin</h5>
+
+                                </div>
+                            </div>
+                            <div class="details text-darker">
+
+                                <div class="day-detail">
+                                    Sunday, January 3
+                                </div>
+                                <div class="time-detail">
+                                    3:00pm GMT
+                                </div>
+                                <div class="event-detail">
+                                    Consultation for Allergies
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- end content -->
 
     </div>
     <!-- end wrapper -->
@@ -708,10 +602,10 @@
     <!-- Optional JavaScript -->
     <!-- jquery script -->
     <script src="../js/jquery-3.3.1.min.js"></script>
-    
+
     <!-- popper js -->
     <script src="../js/popper.min.js"></script>
-    
+
     <!-- bootstrap js -->
     <script src="../js/bootstrap.min.js"></script>
 
@@ -720,11 +614,177 @@
 
     <!-- full Calender js -->
     <script src="../js/fullcalendar.min.js"></script>
-    
+
     <!-- Main js -->
     <script src="../js/main.js"></script>
 
-    
+    <script>
+        $(document).ready(function () {
+
+            // page is now ready, initialize the calendar...
+
+            let weekDay = [
+                "monday", "tuesay", "wednesday", "thursday", "friday", "saturday", "sunday"
+            ];
+
+            let monthName = [
+                "january", "february", "march", "april", "june", "july", "august", "septembet", "october", "november", "december"
+
+            ];
+
+
+            $('#calendar').fullCalendar({
+                height: 500,
+                dayClick: function (date, jsEvent, view) {
+
+                    alert('Clicked on: ' + date.format());
+
+
+
+                },
+
+
+                eventClick: function (calEvent, jsEvent, view) {
+
+                    eventTitle = calEvent.title;
+
+                    mainDate = new Date(calEvent.start.format());
+
+
+
+
+                },
+                events: [
+                    {
+                        title: 'Allergy Appointment',
+                        start: '2019-01-02T13:13:55.008',
+                        end: '2019-01-02T13:13:55.008'
+                    },
+                    {
+                        title: 'Appoitment',
+                        start: '2019-01-03T13:13:55.008',
+                        end: '2019-01-03T13:13:55.008'
+                    },
+                    {
+                        title: 'Event Title2',
+                        start: '2019-01-05T13:13:55-0400',
+                        end: '2019-01-05T13:13:55-0400'
+                    }
+                ],
+
+
+
+            });
+
+
+            //   CALENDAR SCHEDULE CARD SCRIPT
+
+
+            // GLOBALS
+            let $todayCell = $('.fc-day-top.fc-today');
+            let $todayCellIndex = $('.fc-day-top.fc-today')[0].cellIndex;
+            let $eventDisplayCard = $('.display-card .card-body');
+            let dayDetail, timeDetail, eventDetail;
+            let $dayDetailContainer = $('.day-detail');
+            let $timeDetailContainer = $('.time-detail');
+            let $eventDetailContainer = $('.event-detail');
+            let $td = $(getEventCell());
+            let now, future, mins, hour, day, date, month, mainDate, mainTime, eventTitle;
+
+
+            function getCellTable(cell) {
+                let $cellTable;
+                $cellTable = cell.closest('table');
+                return $cellTable;
+            }
+
+            function getEventCell() {
+                let $currentTable = getCellTable($todayCell);
+                let $td = $currentTable.find('tbody td')[$todayCellIndex];
+
+                return $td;
+
+            }
+
+            function hasEvent(cell) {
+                return cell.hasClass('fc-event-container');
+            }
+
+            //  TIME FORMATTING FOR DAY AND TIME
+
+            function getMainDate(date) {
+                now = new Date(date);
+                day = weekDay[now.getDay() - 1];
+                date = now.getDate();
+                month = monthName[now.getMonth()];
+
+                mainDate = day + ", " + month + " " + date;
+
+                return mainDate;
+            }
+
+            function getMainTime(object) {
+                mainTime = object.find('.fc-time');
+                return mainTime.text()
+
+            }
+
+            function getEventTitle(object) {
+                eventTitle = object.find('.fc-title');
+                return eventTitle.text();
+            }
+
+            function eventContainerAppend(day, time, eventt) {
+                $eventDetailContainer.html(eventt);
+                $dayDetailContainer.html(day);
+                $timeDetailContainer.html(time);
+            }
+            // main time ,date, and event for current day
+            timeDetail = getMainTime($td) + "m";
+
+            dayDetail = getMainDate($todayCell.data('date'));
+
+            eventDetail = getEventTitle($td);
+
+
+
+
+            if (hasEvent($td)) {
+                $eventDetailContainer.text(eventDetail);
+                $dayDetailContainer.text(dayDetail);
+                $timeDetailContainer.text(timeDetail);
+            } else {
+                $eventDisplayCard.html('<h2 class="text-center">No Event Today</h2>');
+
+            }
+
+
+            $('.fc-content-skeleton tbody td').click(function () {
+
+
+                if (hasEvent($(this))) {
+                    // alert(mainDate);
+                    dayDetail = getMainDate(mainDate);
+                    alert(dayDetail);
+                    timeDetail = getMainTime($(this)) + "m";
+                    eventDetail = getEventTitle($(this));
+
+
+                    // alert(timeDetail + " ," + dayDetail + " ," + eventDetail);
+
+                    eventContainerAppend(dayDetail, timeDetail, eventDetail);
+                } else {
+                    $eventDisplayCard.html('<h2 class="text-center">No Event Today</h2>');
+
+                }
+
+            });
+
+
+
+        });
+
+    </script>
 </body>
 
 </html>

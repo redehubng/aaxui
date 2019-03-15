@@ -25,7 +25,7 @@
 
     
 
-    <title>Axya - Edit Profile</title>
+    <title>Axya - Profile</title>
 </head>
 
 <body>
@@ -272,7 +272,7 @@
                         </button>
                 
                         <a class="crumb h4 text-theme-blue text-uppercase">
-                            Edit Profile
+                            Profile
                         </a>
 
                         <!-- SEARCH OPTIONS TO OVERRIDE MAIN CRUMB -->
@@ -414,10 +414,24 @@
                                         
                                     
                                         <div class="col-md-7">
-                                            <div class="profile-view profile-view--self">
+                                            <div class="profile-view ">
                                                
                                                 <form action="#" method="post">
 
+                                                    <div class="form-category">
+                                                        <h4 class="form-category-title">My Subscription Plan</h4>
+                                                        <div class="row align-items-center">
+                                                            <div class="col-sm-8 ">
+                                                                <p>You have a 
+                                                                    <span id="subscription-type">Quaterly</span>
+                                                                    Plan
+                                                                </p>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <a href="#" class="btn btn-secondary">manage subscription</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                     <!-- FORM CATEGORY  HERE-->
                                                     
                                                     <div class="form-category">
@@ -426,13 +440,13 @@
                                                         <div class="form-group row">
                                                             <label for="email" class="col-sm-3 col-form-label text-right">Your Email</label>
                                                             <div class="col-sm-9">
-                                                                <input type="email" class="form-control" name="email" id="email" placeholder="email" value="johndoe@gmail.com" >
+                                                                <input type="email" class="form-control" name="email" id="email" placeholder="email" value="johndoe@gmail.com" disabled>
                                                             </div>
                                                         </div>
                                                         <div class="form-group row">
                                                             <label for="password" class="col-sm-3 col-form-label text-right">Your Password</label>
                                                             <div class="col-sm-9">
-                                                                <input type="password" class="form-control" name="password" id="password" placeholder="password" value="password" >
+                                                                <input type="password" class="form-control" name="password" id="password" placeholder="password" value="password" disabled>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -445,14 +459,26 @@
                                                         <div class="form-group row">
                                                             <label for="tel" class="col-sm-3 col-form-label text-right">Phone</label>
                                                             <div class="col-sm-9">
-                                                                <input type="tel" class="form-control" name="tel" id="tel" placeholder="tel" value="+40 345 345 345" >
+                                                                <input type="tel" class="form-control" name="tel" id="tel" placeholder="tel" value="+40 345 345 345" disabled>
                                                             </div>
                                                         </div>
                                                         
                                                         <div class="form-group row">
                                                             <label for="home-address" class="col-sm-3 col-form-label text-right">Home Address</label>
                                                             <div class="col-sm-9">
-                                                                <input type="text" class="form-control" name="home-address" id="home-address" placeholder="your home address" value="" >
+                                                                <input type="text" class="form-control" name="home-address" id="home-address" placeholder="your home address" value="" disabled>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label for="work-address" class="col-sm-3 col-form-label text-right">work Address</label>
+                                                            <div class="col-sm-9">
+                                                                <input type="text" class="form-control" name="work-address" id="work-address" placeholder="your work address" value="" disabled>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label for="state-country" class="col-sm-3 col-form-label text-right">State/Country</label>
+                                                            <div class="col-sm-9">
+                                                                <input type="text" class="form-control" name="state-country" id="state-country" placeholder="State/Country" value="" disabled>
                                                             </div>
                                                         </div>
                                                         
@@ -469,14 +495,14 @@
                                                                 <div class="form-group row">
                                                                     <label for="fname" class="col-sm-3 col-form-label text-right">firstname</label>
                                                                     <div class="col-sm-9">
-                                                                        <input type="text" class="form-control" name="fname" id="fname" placeholder="fname" value="John" >
+                                                                        <input type="text" class="form-control" name="fname" id="fname" placeholder="fname" value="John" disabled>
                                                                     </div>
                                                                 </div>
                                                                 
                                                                 <div class="form-group row">
                                                                     <label for="lname" class="col-sm-3 col-form-label text-right">lastname</label>
                                                                     <div class="col-sm-9">
-                                                                        <input type="text" class="form-control" name="lname" id="lname" placeholder="last name" value="Doe" >
+                                                                        <input type="text" class="form-control" name="lname" id="lname" placeholder="last name" value="Doe" disabled>
                                                                     </div>
                                                                 </div>
                                                                 
@@ -484,7 +510,7 @@
                                                                 <div class="form-group row">
                                                                     <label for="language" class="col-sm-3 col-form-label text-right">language</label>
                                                                     <div class="col-sm-9">
-                                                                        <input type="text" class="form-control" name="language" id="language" placeholder="last name" value="Doe" >
+                                                                        <input type="text" class="form-control" name="language" id="language" placeholder="country" value="Romania" disabled>
                                                                     </div>
                                                                 </div>
                                                                 
@@ -495,26 +521,11 @@
                                                                 <div class="form-group row">
                                                                     <label for="gender" class="col-sm-3 col-form-label text-right">Gender</label>
                                                                     <div class="col-sm-9">
-                                                                        <select class="form-control">
-                                                                            <option value="1" selected>male</option>
-                                                                           
-                                                                            <option value="2">female</option>
-                                                                        </select>
+                                                                        <input type="text" class="form-control" name="gender" id="gender" placeholder="gender" value="male" disabled>
                                                                     </div>
                                                                 </div>
 
-                                                                <div class="form-group row">
-                                                                    <label for="height" class="col-sm-3 col-form-label text-right">height</label>
-                                                                    <div class="col-sm-9">
-                                                                        <input type="text" class="form-control" name="height" id="height" placeholder="height" value="170cm" >
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-group row">
-                                                                    <label for="weight" class="col-sm-3 col-form-label text-right">weight</label>
-                                                                    <div class="col-sm-9">
-                                                                        <input type="text" class="form-control" name="weight" id="weight" placeholder="weight" value="110lbs" >
-                                                                    </div>
-                                                                </div>
+                                                                
                                                             </div>
                                                         </div>
                                                         
@@ -529,57 +540,84 @@
                                                         <div class="form-group row">
                                                             <label for="bday" class="col-sm-3 col-form-label-text-right">Birthday</label>
                                                             <div class="col-sm-9">
-                                                                <input type="text" class="form-control" name="bday" id="bday" placeholder="bday" value="20/11/1985" >    
+                                                                <input type="text" class="form-control" name="bday" id="bday" placeholder="bday" value="20/11/1985" disabled>    
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="form-category">
 
-                                                        <h4 class="form-category-title">Medical Information</h4>
+                                                        <h4 class="form-category-title">Education</h4>
 
-                                                        <div class="row">
-                                                            <div class="col-sm-6">
-                                                                <div class="form-group row">
-                                                                    <label for="bday" class="col-sm-4 col-form-label-text-right">Allergies</label>
-                                                                    <div class="col-sm-8">
-                                                                        <textarea name="allergies" id="allergies" rows="2" class="form-control"></textarea>
-                                                                    </div>
-                                                                </div>
+                                                        <div class="form-group row">
+                                                            <label for="speciality" class="col-sm-3 col-form-label-text-right">Speciality</label>
+                                                            <div class="col-sm-9">
+                                                                <input type="text" class="form-control" name="speciality" id="speciality" placeholder="speciality" value="pathology" disabled>
                                                             </div>
-                                                            <div class="col-sm-6">
-                                                                <div class="form-group row">
-                                                                    <label for="bday" class="col-sm-4 col-form-label-text-right">Chronic Condition</label>
-                                                                    <div class="col-sm-8">
-                                                                        <textarea name="allergies" id="allergies" rows="2" class="form-control"></textarea>
-                                                                    </div>
-                                                                </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label for="school" class="col-sm-3 col-form-label-text-right">School</label>
+                                                            <div class="col-sm-9">
+                                                                <input type="text" class="form-control" name="school" id="school" placeholder="school"  disabled>
                                                             </div>
-                                                            <div class="col-sm-6">
-                                                                <div class="form-group row">
-                                                                    <label for="bday" class="col-sm-4 col-form-label-text-right">Medical Test</label>
-                                                                    <div class="col-sm-8">
-                                                                        <textarea name="allergies" id="allergies" rows="2" class="form-control"></textarea>
-                                                                    </div>
-                                                                </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label for="degree" class="col-sm-3 col-form-label-text-right">Degree</label>
+                                                            <div class="col-sm-9">
+                                                                <input type="text" class="form-control" name="degree" id="degree" placeholder="degree"  disabled>
                                                             </div>
-                                                            <div class="col-sm-6">
-                                                                <div class="form-group row">
-                                                                    <label for="bday" class="col-sm-4 col-form-label-text-right">Treatments</label>
-                                                                    <div class="col-sm-8">
-                                                                        <textarea name="allergies" id="allergies" rows="2" class="form-control"></textarea>
-                                                                    </div>
-                                                                </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label for="residency" class="col-sm-3 col-form-label-text-right">Recidency</label>
+                                                            <div class="col-sm-9">
+                                                                <input type="text" class="form-control" name="residency" id="residency" placeholder="residency"  disabled>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label for="certification" class="col-sm-3 col-form-label-text-right">certification</label>
+                                                            <div class="col-sm-9">
+                                                                <input type="text" class="form-control" name="certification" id="certification" placeholder="certification"  disabled>
                                                             </div>
                                                         </div>
 
 
-                                                       
+                                                        <div class="modal fade" id="allergyModal" tabindex="-1" role="dialog" aria-labelledby="allergyModalLabel"
+                                                            aria-hidden="true">
+                                                            <div class="modal-dialog" role="document">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title" id="exampleModalLabel">Allergies</h5>
+                                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true">&times;</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <ol class=" flex-column">
+                                                                            <li class="nav-item">
+                                                                                <a class="nav-link" href="#" data-toggle="modal" data-target="#allergyModal">Dodo</a>
+                                                                            </li>
+                                                                            <li class="nav-item">
+                                                                                <a class="nav-link" href="#">Bread</a>
+                                                                            </li>
+                                                                            <li class="nav-item">
+                                                                                <a class="nav-link" href="#">Peanut</a>
+                                                                            </li>
+                                                                            <li class="nav-item">
+                                                                                <a class="nav-link" href="#">Milk</a>
+                                                                            </li>
+                                                                        
+                                                                        </ol>
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
                                                     </div>
 
                                                 </form>
                                                 
                                                 <div class="p-4 mt-4 text-center">
-                                                    <a href="profile-edit.html" class="btn btn-primary">Save Changes</a>
+                                                    <a href="profile-edit.html" class="btn btn-primary">Edit Profile</a>
                                                     
                                                 </div>
                                             </div>
